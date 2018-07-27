@@ -1,0 +1,13 @@
+.we {
+  top: 0;
+  left: 0;
+  height: 650px;
+  width: 100%;
+  background: url("../img/bg2.png") center center/cover no-repeat;
+  padding: 0; }
+
+.we__bottom {
+  display: flex;
+  justify-content: space-between; }
+
+/*# sourceMappingURL=we.css.map */
