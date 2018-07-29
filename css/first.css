@@ -1,74 +1,92 @@
 .first {
   top: 0;
   left: 0;
-  height: 650px;
+  height: 100%;
   width: 100%;
   background: url("../img/bg.png") center center/cover no-repeat; }
 
-.menu {
+.header {
   height: 85px; }
 
 .content {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  /* flex-flow: row wrap; */
   height: 100%;
-  width: 1100px;
+  width: 940px;
   margin: 0 auto; }
 
-.content__item {
-  flex: 1 700px 1; }
-
-.menu__left {
-  float: left; }
+.header__left {
+  float: left;
+  padding-top: 10px;
+  padding-right: 20px; }
 
 .nav {
   display: flex;
+  align-items: center;
   color: white; }
 
 .nav__list {
-  margin-left: 15px; }
-
-.nav__nav {
-  text-decoration: none;
-  color: white; }
-
-.aside {
+  margin-left: 15px;
   display: flex;
-  flex-direction: column;
-  float: right;
-  color: white; }
+  align-items: center; }
+  .nav__list:first-child::before {
+    display: none; }
+  .nav__list::before {
+    content: " ";
+    display: block;
+    width: 4px;
+    height: 4px;
+    background: #ffffff;
+    border-radius: 50%;
+    margin: 0 10px; }
 
-.menu__right {
-  float: right; }
+.nav__link {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 13px; }
+
+.header__right {
+  float: right;
+  padding-left: 10px; }
 
 .button {
-  width: 100px;
-  height: 35px;
+  display: inline-block;
   border: 0px;
   background: #e45028;
   color: white;
-  border-radius: 5px; }
+  border-radius: 5px;
+  padding: 9px 16px;
+  text-transform: uppercase;
+  font-size: 13px; }
   .button:hover {
-    background: #c1401e; }
+    background: #c1401e;
+    transition: 0.5s; }
 
-.main {
+.first__contenren {
   display: flex;
-  justify-content: space-between;
-  width: 950px;
-  height: 480px;
-  padding-left: 30px; }
+  align-items: center;
+  flex: .8;
+  padding-top: 50px; }
 
 .img_burg {
-  widows: 465px;
-  height: 380px;
+  width: 470px;
+  height: 450px;
   float: left; }
 
-.main__left {
-  margin-left: 0; }
+.first__text {
+  padding-left: 10px;
+  line-height: 50px;
+  vertical-align: text-top; }
+
+.subtext {
+  font-size: 65px;
+  font-family: 'Lifehack Medium';
+  color: #fff;
+  text-align: left; }
 
 .strel {
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 40px; }
 
 /*# sourceMappingURL=first.css.map */

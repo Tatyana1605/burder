@@ -1,0 +1,30 @@
+.aside {
+  position: fixed;
+  top: 90px;
+  right: 45px;
+  width: 10px;
+  
+  // background: #ffffff;
+
+}
+
+.aside__btn {
+  margin-bottom: 15px;
+  color: #ffffff;
+  display: block;
+  width: 6px;
+  height: 6px;
+  background: #ffffff;
+  border-radius: 50%;
+  // display: flex;
+  // align-items: center;
+  // &:first-child {
+    
+  //    width: 16px;
+  //    height: 16px;
+  //    border: 1px solid #ffffff;
+      
+    
+  // }
+  
+}

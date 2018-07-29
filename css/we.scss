@@ -2,18 +2,48 @@
   // position: fixed;
   top: 0;
   left: 0;
-  height: 650px;
+  height: 100%;
   width: 100%;
   background: url('../img/bg2.png') center center / cover no-repeat ;
   padding: 0;
 }
 
 
-.we__top {
+
+.we__list {
+  display: flex;
+  align-items: flex-start;
+}
+
+.we__item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 15px;
+}
+.we__img {
+  padding-bottom: 25px;
+}
+
+.we__content {
+  text-align: center;
+  
+}
+
+.we__text {
+  padding-top: 20px;
 
 }
 
-.we__bottom {
- display: flex;
- justify-content:space-between;
-}
+// .like {
+//   margin-top: 130px;
+
+// }
+
+// .we__bottom {
+//  display: flex;
+//  justify-content:space-between;
+//  padding-top: 20px;
+ 
+// }

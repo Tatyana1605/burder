@@ -1,105 +1,153 @@
 
 
 .first {
-  // position: fixed;
   top: 0;
   left: 0;
-  height: 650px;
+  height: 100%;
   width: 100%;
   background: url('../img/bg.png') center center / cover no-repeat ;
 
 }
 
-.menu {
+.header {
   height: 85px;
 }
 
 .content {
   display: flex;
-  justify-content: space-between; 
   align-items: center;
-  /* flex-flow: row wrap; */
   height: 100%;
-  width: 1100px;
+  width: 940px;
   margin: 0 auto;
 
 }
 
 .content__item {
-  flex: 1 700px 1;
+  
+  // margin-right: auto;
 }
 
-.menu__left {
+.header__left {
   float: left;
+  padding-top: 10px;
+  padding-right: 20px;
+  // padding-left: 50px;
 }
 
 .nav {
   display: flex;
-  
+  align-items: center;
   color: white;
 
 }
 
 .nav__list {
   margin-left: 15px;
+  display: flex;
+  align-items: center;
+  &:first-child {
+    &::before {
+      display: none;
+    }
+  }
+  &::before {
+    content: " ";
+    display: block;
+    width: 4px;
+    height: 4px;
+    background: #ffffff;
+    border-radius: 50%;
+    margin: 0 10px;
+  }
 }
 
-.nav__nav {
+.nav__link {
   text-decoration: none;
   color: white;
+  text-transform: uppercase;
+  font-size: 13px;
 }
 
-.aside {
-  display: flex;
-  flex-direction: column;
-  float: right;
-  color: white;
-  
-}
-
-.aside__item {
-  
-}
-.menu__centr {
+.header__centr {
  
 }
 
-.menu__right {
+.header__right {
   float: right;
+  // width: 100px;
+  // height: 35px;
+  padding-left: 10px;
 }
 
 .button {
-  width: 100px;
-  height: 35px;
+  display: inline-block;
   border: 0px;
   background: #e45028;
   color: white;
   border-radius: 5px;
+  padding: 9px 16px;
+  text-transform: uppercase;
+  font-size: 13px;
 
     &:hover {
       background: #c1401e;
+      transition: 0.5s;
     }
 }
 
-.main {
+// .first__contenren {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   flex: 1;
+//   // width: 950px;
+//   // height: 480px;
+//   // padding-left: 30px;
+// }
+
+.first__contenren {
   display: flex;
-  justify-content: space-between;
-  width: 950px;
-  height: 480px;
-  padding-left: 30px;
+  align-items: center;
+  flex: .8;
+  padding-top: 50px;
 }
 
+// .main__txt {
+//   width: 940px;
+//   height: 475px;
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   margin-right: -50%;
+//   transform: translate(-50%, -50%);
+// }
+
+
 .img_burg {
-  widows: 465px;
-  height: 380px;
+  width: 470px;
+  height: 450px;
   float: left;
 
 }
 
-.main__left {
-  margin-left: 0;
+.first__picture {
+  // margin-left: 0;
 }
 
+.first__text {
+  padding-left: 10px;
+  line-height: 50px;
+  vertical-align: text-top;
+}
+ .subtext{
+  font-size: 65px;
+  font-family: 'Lifehack Medium';
+  color: #fff;
+  text-align: left;
+ }
+ 
 .strel {
   text-align: center;
+  padding-bottom: 40px;
+
 }

@@ -1,19 +1,89 @@
 .reviews {
-  background: #d5d5d5;
   top: 0;
   left: 0;
-  height: 650px;
-  width: 100%;
+  height: 100%;
+  // width: 100%;
 }
 
-.article {
+
+
+
+.reviews__list {
+  background: black;
+  // top: 0;
+  // left: 0;
+  height: 100%;
+  // width: 100%;
   display: flex;
   flex-wrap: wrap;
-  align-content: center;
+
 }
 
-.article__foto {
+.reviews__item {
+  height: 50%;
+  width: 25%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   filter: grayscale(100%);
-  filter: gray;
-  
+  position: relative;
+
+  &:hover {
+    .reviews__hover {
+      opacity: 1;
+      visibility: visible;
+      transition: 1s;
+    }
+  }
+
 }
+
+
+
+.reviews__hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba($color: #141414, $alpha: .7);
+  color: #ffffff;
+  opacity: 0;
+  visibility: hidden;
+  
+ 
+ }
+
+ .reviews__hover-activ {
+  opacity: 1;
+  color: #ffffff;
+ }
+
+
+ .reviews__title {
+   padding: 46px 0 26px 18px;
+   text-transform: uppercase;
+   color: #ffffff;
+ }
+
+ .reviews__text {
+   padding: 0 30px 15px 18px;
+   color: #ffffff;
+   font-family: 'Gagalin Regular';
+ }
+
+ .btn {
+   padding-left: 18px;
+ }
+  
+// .article {
+//   display: flex;
+//   flex-wrap: wrap;
+//   align-content: center;
+// }
+
+// .article__foto {
+//   filter: grayscale(100%);
+//   filter: gray;
+  
+// }

@@ -3,23 +3,58 @@
   margin: 0;
   padding: 0; }
 
+html,
+body {
+  font-size: 16px;
+  line-height: 1.42;
+  position: relative;
+  color: black;
+  font-family: 'Ubuntu-Light'; }
+
 .wrapper {
-  display: flex;
-  flex-direction: column; }
+  position: relative;
+  width: 100%;
+  min-width: 960px;
+  min-height: 100%;
+  overflow: hidden; }
 
 .group {
   width: 100%;
-  height: 650px; }
+  height: 100vh;
+  min-height: 650px; }
 
 .position {
   height: 100%;
-  width: 1100px;
-  margin: 0 auto; }
-
-h1 {
-  color: #f9b43b; }
+  width: 940px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
 
 p {
-  color: #fff; }
+  color: #767574;
+  font-family: 'Ubuntu-Light'; }
+
+a {
+  text-decoration: none; }
+
+li {
+  list-style-type: none; }
+
+.title {
+  font-size: 72px;
+  font-family: 'Gagalin Regular';
+  color: #f9b43b;
+  text-align: left; }
+
+.title__we {
+  color: #2f3234;
+  text-align: center; }
+
+.we__title {
+  font-size: 24px;
+  font-family: 'Lifehack Medium';
+  color: #2f3234;
+  text-align: center; }
 
 /*# sourceMappingURL=body.css.map */

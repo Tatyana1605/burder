@@ -1,0 +1,16 @@
+.aside {
+  position: fixed;
+  top: 90px;
+  right: 45px;
+  width: 10px; }
+
+.aside__btn {
+  margin-bottom: 15px;
+  color: #ffffff;
+  display: block;
+  width: 6px;
+  height: 6px;
+  background: #ffffff;
+  border-radius: 50%; }
+
+/*# sourceMappingURL=aside.css.map */
