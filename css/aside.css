@@ -1,16 +1,43 @@
 .aside {
   position: fixed;
   top: 90px;
-  right: 45px;
-  width: 10px; }
+  right: 45px; }
 
-.aside__btn {
-  margin-bottom: 15px;
-  color: #ffffff;
+.aside__item {
+  width: 16px;
+  height: 16px;
   display: block;
-  width: 6px;
-  height: 6px;
-  background: #ffffff;
-  border-radius: 50%; }
+  position: relative; }
+  .aside__item:after, .aside__item:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%; }
+  .aside__item:after {
+    width: 6px;
+    height: 6px;
+    background: #ffffff; }
+  .aside__item:before {
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    opacity: 0;
+    transition: 0.3s; }
+  .aside__item:hover:before {
+    width: 14px;
+    height: 14px;
+    opacity: 1; }
+
+.aside__item.activ .aside__btn:before {
+  width: 14px;
+  height: 14px;
+  opacity: 1; }
+
+.aside__item {
+  margin-bottom: 5px; }
 
 /*# sourceMappingURL=aside.css.map */

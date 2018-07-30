@@ -32,8 +32,7 @@ body {
   justify-content: center; }
 
 p {
-  color: #767574;
-  font-family: 'Ubuntu-Light'; }
+  color: #aeaba9; }
 
 a {
   text-decoration: none; }
@@ -59,22 +58,46 @@ li {
 
 @font-face {
   font-family: 'Gagalin Regular';
-  src: url(../fonts/Gagalin/Gagalin-Regular.otf); }
+  src: url("../fonts/Gagalin-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 @font-face {
   font-family: 'Ubuntu-B';
-  src: url(../fonts/Ubuntu/Ubuntu-B.tttf); }
+  src: url("../fonts/ubuntu-b-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 @font-face {
   font-family: 'Ubuntu-Light';
-  src: url(../fonts/Ubuntu/Ubuntu-Light.tttf); }
+  src: url("../fonts/Ubuntu-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 @font-face {
   font-family: 'Ubuntu-Medium';
-  src: url(../fonts/Ubuntu/Ubuntu-Medium.tttf); }
+  src: url("../fonts/Ubuntu-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 @font-face {
   font-family: 'Ubuntu-Regular';
-  src: url(../fonts/Ubuntu/Ubuntu-Regular.tttf); }
+  src: url("../fonts/Ubuntu/Ubuntu-Regular.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 @font-face {
   font-family: 'Lifehack Medium';
-  src: url("../fonts/Lifehack Medium.otf"); }
+  src: url("../fonts/Lifehack-Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 .first {
   top: 0;
   left: 0;
@@ -100,10 +123,11 @@ li {
 .nav {
   display: flex;
   align-items: center;
-  color: white; }
+  color: white;
+  font-family: 'Ubuntu-Medium'; }
 
 .nav__list {
-  margin-left: 15px;
+  margin-left: 10px;
   display: flex;
   align-items: center; }
   .nav__list:first-child::before {
@@ -115,7 +139,7 @@ li {
     height: 4px;
     background: #ffffff;
     border-radius: 50%;
-    margin: 0 10px; }
+    margin: 0 13px; }
 
 .nav__link {
   text-decoration: none;
@@ -135,15 +159,16 @@ li {
   border-radius: 5px;
   padding: 9px 16px;
   text-transform: uppercase;
-  font-size: 13px; }
+  font-size: 13px;
+  font-family: 'Ubuntu-Medium'; }
   .button:hover {
     background: #c1401e;
     transition: 0.5s; }
 
 .first__contenren {
   display: flex;
-  align-items: center;
-  flex: .8;
+  justify-content: center;
+  flex: 1;
   padding-top: 50px; }
 
 .img_burg {
@@ -153,8 +178,7 @@ li {
 
 .first__text {
   padding-left: 10px;
-  line-height: 50px;
-  vertical-align: text-top; }
+  line-height: 50px; }
 
 .subtext {
   font-size: 65px;
@@ -236,12 +260,12 @@ li {
 .reviews__title {
   padding: 46px 0 26px 18px;
   text-transform: uppercase;
-  color: #ffffff; }
+  color: #ffffff;
+  font-family: 'Ubuntu-Medium'; }
 
 .reviews__text {
   padding: 0 30px 15px 18px;
-  color: #ffffff;
-  font-family: 'Gagalin Regular'; }
+  color: #ffffff; }
 
 .btn {
   padding-left: 18px; }
@@ -249,16 +273,43 @@ li {
 .aside {
   position: fixed;
   top: 90px;
-  right: 45px;
-  width: 10px; }
+  right: 45px; }
 
-.aside__btn {
-  margin-bottom: 15px;
-  color: #ffffff;
+.aside__item {
+  width: 16px;
+  height: 16px;
   display: block;
-  width: 6px;
-  height: 6px;
-  background: #ffffff;
-  border-radius: 50%; }
+  position: relative; }
+  .aside__item:after, .aside__item:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%; }
+  .aside__item:after {
+    width: 6px;
+    height: 6px;
+    background: #ffffff; }
+  .aside__item:before {
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    opacity: 0;
+    transition: 0.3s; }
+  .aside__item:hover:before {
+    width: 14px;
+    height: 14px;
+    opacity: 1; }
+
+.aside__item.activ .aside__btn:before {
+  width: 14px;
+  height: 14px;
+  opacity: 1; }
+
+.aside__item {
+  margin-bottom: 5px; }
 
 /*# sourceMappingURL=main.css.map */
