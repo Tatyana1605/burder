@@ -168,8 +168,12 @@ li {
 .first__contenren {
   display: flex;
   justify-content: center;
-  flex: 1;
-  padding-top: 50px; }
+  align-items: center;
+  flex: 1; }
+
+.first__cent {
+  display: flex;
+  justify-content: center; }
 
 .img_burg {
   width: 470px;
