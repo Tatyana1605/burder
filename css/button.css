@@ -1,0 +1,20 @@
+.button {
+  display: inline-block;
+  border: 0px;
+  background: #e45028;
+  color: white;
+  border-radius: 5px;
+  padding: 9px 16px;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-family: 'Ubuntu-Medium'; }
+  .button:hover {
+    background: #c1401e;
+    transition: 0.5s; }
+
+.button__transparen {
+  background: transparent; }
+  .button__transparen:hover {
+    background: transparent; }
+
+/*# sourceMappingURL=button.css.map */

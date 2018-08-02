@@ -1,0 +1,71 @@
+
+.menu {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background: url('../img/menu.png') center center / cover no-repeat ;
+  padding: 90px;
+  // display: flex;
+}
+
+
+
+.accordeon-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 70%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.accordeon-menu__list {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.accordeon-menu__elem {
+  display: flex;
+    &_activ {
+      .accordeon-menu__content {
+        width: 100%;
+      }
+    }
+}
+
+.accordeon-menu__btn {
+  width: 80px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+.accordeon-menu__btn-text {
+  position: absolute;
+  transform: rotate(-90deg) translateY(-50%);
+  white-space: nowrap;
+  color: #ffffff;
+  font-size: 40px;
+  font-family: 'Gagalin Regular';
+  top: 100%;
+  left: 50%;
+  transform-origin: 0 0;
+  margin-top: -20px;
+}
+
+.accordeon-menu__content {
+  overflow: hidden;
+  width: 0;
+  background-color: rgba($color: #4c4e50, $alpha: 0.93);
+}
+
+.accordeon-menu__text {
+  padding: 60px 30px;
+  color: #ffffff;
+}
+
+

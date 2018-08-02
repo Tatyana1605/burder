@@ -1,0 +1,108 @@
+
+.team {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background: url('../img/SBS_1255-X2.png') center center / cover no-repeat ;
+}
+
+.team__right {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  bottom: 0;
+  width: 50%;
+  overflow: hidden;
+  background-color: rgba($color: #393b3c, $alpha: 0.93);
+
+
+}
+
+.team__cent {
+  padding: 85px 90px;
+  overflow: hidden;
+}
+
+.accordeon-team__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.accordeon-team__elem {
+  // display: flex;
+  padding-top: 35px;
+    &_activ {
+      .accordeon-team__contener {
+        height: 100%;
+      }
+    }
+}
+
+
+
+.accordeon-team__btn {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: 'Gagalin Regular';
+  font-size: 14px;
+  display: flex;
+  align-items: flex-end;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+
+    &:before {
+      content: "";
+      height: 0;
+      width: 0;
+      border: 6px solid transparent;
+      border-top-color: #f9b43b;
+      margin-right: 10px;
+     
+    }
+
+  
+}
+   
+
+
+.accordeon-team__contener {
+  display: flex;
+  overflow: hidden;
+  height: 0;
+  
+  
+
+  
+}
+
+.accordeon-team__img {
+  height: 100%;
+  width: 100%;
+  
+}
+
+.accordeon-team__picture {
+  // height: 100px;
+  // width: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  float: left;
+  
+}
+.accordeon-team__text {
+  float: right;
+}
+
+.accordeon-team__title {
+  color: #ffffff;
+  font-family: 'Ubuntu-B';
+}
+
+.accordeon-team__p {
+  color: #ffffff;
+
+}

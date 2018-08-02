@@ -5,7 +5,7 @@
 
 html,
 body {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.42;
   position: relative;
   color: black;
@@ -48,6 +48,12 @@ li {
 
 .title__we {
   color: #2f3234;
+  text-align: center; }
+
+.title__menu {
+  color: #ffffff; }
+
+.title__form {
   text-align: center; }
 
 .we__title {

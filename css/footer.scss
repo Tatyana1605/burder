@@ -1,0 +1,41 @@
+
+.footer {
+  top: 0;
+  left: 0;
+  height: 60px;
+  width: 100%;
+  position: relative;
+  background: url('../img/footer.png') center center / cover no-repeat ;
+}
+
+.footer__cent {
+  display: flex;
+}
+
+.footer__left {
+  width: 50%;
+  float: left;
+}
+
+.footer__right {
+  width: 50%;
+  float: right;
+}
+
+.address__street {
+  color: #ffffff;
+}
+
+.address__tel {
+  color: #d14925;
+}
+
+.social__list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.social__item {
+  padding-right: 20px;
+}
