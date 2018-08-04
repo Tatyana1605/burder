@@ -1,59 +1,49 @@
-
 .footer {
   bottom: 0;
   height: rem(60px);
   width: 100%;
   position: absolute;
-  background: url('../img/footer.png') center center / cover no-repeat ;
-}
+  background: url("../img/footer.png") center center/cover no-repeat; }
 
 .footer__cent {
-  display: flex;
-}
+  display: flex; }
 
 .footer__left {
   width: 50%;
   float: left;
   align-items: center;
-  display: flex;
-}
+  display: flex; }
 
 .footer__right {
   width: 50%;
   float: right;
   align-items: center;
   display: flex;
-  justify-content: flex-end;
-}
+  justify-content: flex-end; }
 
 .address__street {
   color: #ffffff;
   padding-bottom: rem(7px);
-  font-style: normal;
-}
+  font-style: normal; }
 
 .address__tel {
   color: #d14925;
   font-family: 'Ubuntu-B';
-  font-style: normal;
-}
+  font-style: normal; }
 
 .address__tel-img {
-  padding-right: rem(5px);
-}
+  padding-right: rem(5px); }
 
 .social__list {
   display: flex;
   justify-content: flex-end;
-  align-items: center;
-}
+  align-items: center; }
 
 .social__item {
-  padding-right: rem(20px);
-  
-}
+  padding-right: rem(20px); }
 
 .social__img {
   width: rem(20px);
-  height: rem(20px);
-}
+  height: rem(20px); }
+
+/*# sourceMappingURL=footer.css.map */

@@ -15,16 +15,16 @@
 
 .form__bottom, .form__top {
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: rem(20px);
 }
 
-.form__left-top {
+.form__left {
   width: 50%;;
   overflow: hidden;
   
 } 
 
-.form__right-top {
+.form__right {
   width: 50%;
   overflow: hidden;
 }
@@ -41,14 +41,10 @@
   clear: both;
 }
 
-.form__left-bottom, .form__right-bottom {
-  width: 50%;
-  
-}
 
 .form__block {
   flex: 1;
-  margin-right: 20px;
+  margin-right: rem(20px);
 
   &:last-child {
     margin-left: 0;
@@ -61,46 +57,72 @@
 .form__radio-text,
 .form__chec-text  {
   color: #ffffff;
-  margin-bottom: 10px;
-  margin-top: 18px;
+  margin-bottom: rem(10px);
+  margin-top: rem(18px);
 }
 
 .form__input {
-  border-radius: 5px;
-  height: 35px;
-  border: none;
+  border-radius: rem(5px);
+  border: #ffffff;
+  outline: none;
+  height: rem(35px);
+  
   width: 100%;
-  padding: 5px;
-  &:hover {
-    border: 2px  solid #e35028;
+  padding: rem(5px);
+  &:focus {
+    border: rem(2px)  solid #e35028;
     transition: 0.3s;
   }
 }
 
 .form__textarea {
   resize: none;
-  height: 115px;
+  border: #ffffff;
+  outline: none;
+  height: rem(115px);
   width: 100%;
-  border-radius: 5px;
-  padding: 5px;
-  &:hover {
-    border: 2px  solid #e35028;
+  border-radius: rem(5px);
+  padding: rem(5px);
+  &:focus {
+    border: rem(2px)  solid #e35028;
     transition: 0.3s;
   }
 }
 
 .form__radio {
-  padding: 20px 20px 0px 0px;
+  padding: rem(20px) rem(20px) rem(0px) rem(0px);
 }
 
 .form__chec {
-  padding-top: 24px;
+  padding-top: rem(24px);
+  padding-bottom: rem(18px);
 }
 
-.form__input-radio, 
-.form__input-chec {
-  margin-right: 10px;
+
+
+// .form__input-radio, 
+// .form__input-chec {
+//   margin-right: rem(10px);
+// }
+
+.form__btn:after {
+  content: "";
+  position: absolute;
+  background-color: #4b73b5;
+  transition: 1s;
 }
+
+.form__btn {
+  vertical-align: middle;
+  position: relative;
+  width: rem(16px);
+  height: rem(16px);
+  border-radius: 50%;
+  border: rem(1px) solid #4b73b5;
+  margin-right: rem(10px);
+}
+
+
 
 .form__input-radio:checked {
   color: #e35028;

@@ -1,3 +1,9 @@
+$tablets: rem(768px);
+$phones: rem(480px);
+
+
+@import "media.scss";
+
 @import "body.scss";
 @import "font-face.scss";
 @import "button.scss";
@@ -10,5 +16,12 @@
 @import "form.scss";
 @import "map.scss";
 @import "footer.scss";
+
+
+
+
+
+
+
 
 

@@ -106,13 +106,13 @@ li {
   -moz-osx-font-smoothing: grayscale; }
 .button {
   display: inline-block;
-  border: 0px;
+  border: 0rem;
   background: #e45028;
   color: white;
-  border-radius: 5px;
-  padding: 9px 16px;
+  border-radius: 0.3571428571rem;
+  padding: 0.6428571429rem 1.1428571429rem;
   text-transform: uppercase;
-  font-size: 13px;
+  font-size: 0.9285714286rem;
   font-family: 'Ubuntu-Medium'; }
   .button:hover {
     background: #c1401e;
@@ -181,6 +181,9 @@ li {
   justify-content: center;
   align-items: center;
   flex: 1; }
+  @media screen and (max-width: rem(768px)) {
+    .first__contenren {
+      flex-direction: column; } }
 
 .first__cent {
   display: flex;
@@ -357,7 +360,15 @@ li {
 .accordeon-team__elem {
   padding-top: 35px; }
   .accordeon-team__elem_activ .accordeon-team__contener {
-    height: 100%; }
+    height: 100%;
+    padding-top: 14px;
+    padding-left: 14px; }
+  .accordeon-team__elem_activ .accordeon-team__btn {
+    color: #f9b43b; }
+    .accordeon-team__elem_activ .accordeon-team__btn:before {
+      transform: rotate(-180deg);
+      position: relative;
+      top: -6px; }
 
 .accordeon-team__btn {
   color: #ffffff;
@@ -388,16 +399,20 @@ li {
   width: 100%; }
 
 .accordeon-team__picture {
+  height: 100px;
+  width: 100px;
   border-radius: 50%;
   overflow: hidden;
-  float: left; }
+  flex: 1 0 auto;
+  margin-right: 16px; }
 
 .accordeon-team__text {
   float: right; }
 
 .accordeon-team__title {
   color: #ffffff;
-  font-family: 'Ubuntu-B'; }
+  font-family: 'Ubuntu-B';
+  margin-bottom: 14px; }
 
 .accordeon-team__p {
   color: #ffffff; }
@@ -426,8 +441,11 @@ li {
 
 .accordeon-menu__elem {
   display: flex; }
-  .accordeon-menu__elem_activ .accordeon-menu__content {
-    width: 100%; }
+  .accordeon-menu__elem_activ:hover .accordeon-menu__content {
+    width: 100%;
+    transition: 0.3s; }
+  .accordeon-menu__elem_activ:hover .accordeon-menu__btn-text {
+    color: #e7a93f; }
 
 .accordeon-menu__btn {
   width: 80px;
@@ -473,11 +491,11 @@ li {
   display: flex;
   margin-bottom: 20px; }
 
-.form__left-top {
+.form__left {
   width: 50%;
   overflow: hidden; }
 
-.form__right-top {
+.form__right {
   width: 50%;
   overflow: hidden; }
 
@@ -489,9 +507,6 @@ li {
   content: '';
   display: block;
   clear: both; }
-
-.form__left-bottom, .form__right-bottom {
-  width: 50%; }
 
 .form__block {
   flex: 1;
@@ -508,21 +523,24 @@ li {
 
 .form__input {
   border-radius: 5px;
+  border: #ffffff;
+  outline: none;
   height: 35px;
-  border: none;
   width: 100%;
   padding: 5px; }
-  .form__input:hover {
+  .form__input:focus {
     border: 2px  solid #e35028;
     transition: 0.3s; }
 
 .form__textarea {
   resize: none;
+  border: #ffffff;
+  outline: none;
   height: 115px;
   width: 100%;
   border-radius: 5px;
   padding: 5px; }
-  .form__textarea:hover {
+  .form__textarea:focus {
     border: 2px  solid #e35028;
     transition: 0.3s; }
 
@@ -530,10 +548,22 @@ li {
   padding: 20px 20px 0px 0px; }
 
 .form__chec {
-  padding-top: 24px; }
+  padding-top: 24px;
+  padding-bottom: 18px; }
 
-.form__input-radio,
-.form__input-chec {
+.form__btn:after {
+  content: "";
+  position: absolute;
+  background-color: #4b73b5;
+  transition: 1s; }
+
+.form__btn {
+  vertical-align: middle;
+  position: relative;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid #4b73b5;
   margin-right: 10px; }
 
 .form__input-radio:checked {
@@ -551,11 +581,10 @@ li {
   background: url("../img/map.png") center center/cover no-repeat; }
 
 .footer {
-  top: 0;
-  left: 0;
+  bottom: 0;
   height: 60px;
   width: 100%;
-  position: relative;
+  position: absolute;
   background: url("../img/footer.png") center center/cover no-repeat; }
 
 .footer__cent {
@@ -563,17 +592,29 @@ li {
 
 .footer__left {
   width: 50%;
-  float: left; }
+  float: left;
+  align-items: center;
+  display: flex; }
 
 .footer__right {
   width: 50%;
-  float: right; }
+  float: right;
+  align-items: center;
+  display: flex;
+  justify-content: flex-end; }
 
 .address__street {
-  color: #ffffff; }
+  color: #ffffff;
+  padding-bottom: 7px;
+  font-style: normal; }
 
 .address__tel {
-  color: #d14925; }
+  color: #d14925;
+  font-family: 'Ubuntu-B';
+  font-style: normal; }
+
+.address__tel-img {
+  padding-right: 5px; }
 
 .social__list {
   display: flex;
@@ -582,5 +623,9 @@ li {
 
 .social__item {
   padding-right: 20px; }
+
+.social__img {
+  width: 20px;
+  height: 20px; }
 
 /*# sourceMappingURL=main.css.map */

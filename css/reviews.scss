@@ -16,6 +16,7 @@
   height: 100%;
   // width: 100%;
   display: flex;
+
   flex-wrap: wrap;
 
 }
@@ -62,20 +63,20 @@
 
 
  .reviews__title {
-   padding: 46px 0 26px 18px;
+   padding: rem(46px) 0 rem(26px) rem(18px);
    text-transform: uppercase;
    color: #ffffff;
    font-family: 'Ubuntu-Medium';
  }
 
  .reviews__text {
-   padding: 0 30px 15px 18px;
+   padding: 0 rem(30px) rem(15px) rem(18px);
    color: #ffffff;
   
  }
 
  .btn {
-   padding-left: 18px;
+   padding-left: rem(18px);
  }
   
 // .article {

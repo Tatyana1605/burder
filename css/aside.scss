@@ -1,16 +1,17 @@
 .aside {
   position: fixed;
-  top: 90px;
-  right: 45px;
+  top: rem(90px);
+  right: rem(45px);
    
 
 }
 
 .aside__item  {
-  width: 16px;
-  height: 16px;
+  width: rem(16px);
+  height: rem(16px);
   display: block;
   position: relative;
+
 
     &:after, &:before {
       content: "";
@@ -23,24 +24,24 @@
     }
     
     &:after {
-      width: 6px;
-      height: 6px;
+      width: rem(6px);
+      height: rem(6px);
       background: #ffffff;
     }
 
     &:before {
-      width: 0px;
-      height: 0px;
+      width: rem(0px);
+      height: rem(0px);
       border-radius: 50%;
-      border: 1px solid #ffffff;
+      border: rem(1px) solid #ffffff;
       opacity: 0;
       transition: 0.3s;
     }
 
     &:hover {
         &:before {
-          width: 14px;
-          height: 14px;
+          width: rem(14px);
+          height: rem(14px);
           opacity: 1;
         }
     }
@@ -54,8 +55,8 @@
   &.activ {
          .aside__btn {
               &:before {
-                width: 14px;
-                height: 14px;
+                width: rem(14px);
+                height: rem(14px);
                 opacity: 1;
               }
            
@@ -64,5 +65,5 @@
 }
 
 .aside__item {
-  margin-bottom: 5px;
+  margin-bottom: rem(5px);
 }

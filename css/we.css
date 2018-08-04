@@ -16,15 +16,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px 15px; }
+  padding: rem(40px) rem(15px); }
 
 .we__img {
-  padding-bottom: 25px; }
+  padding-bottom: rem(25px); }
 
 .we__content {
   text-align: center; }
 
 .we__text {
-  padding-top: 20px; }
+  padding-top: rem(20px); }
 
 /*# sourceMappingURL=we.css.map */

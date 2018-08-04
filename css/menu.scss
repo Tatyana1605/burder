@@ -6,7 +6,7 @@
   width: 100%;
   position: relative;
   background: url('../img/menu.png') center center / cover no-repeat ;
-  padding: 90px;
+  padding: rem(90px);
   // display: flex;
 }
 
@@ -29,15 +29,19 @@
 
 .accordeon-menu__elem {
   display: flex;
-    &_activ {
+    &_activ:hover {
       .accordeon-menu__content {
         width: 100%;
+        transition: 0.3s;
+      }
+      .accordeon-menu__btn-text {
+        color: #e7a93f;
       }
     }
 }
 
 .accordeon-menu__btn {
-  width: 80px;
+  width: rem(80px);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -49,12 +53,12 @@
   transform: rotate(-90deg) translateY(-50%);
   white-space: nowrap;
   color: #ffffff;
-  font-size: 40px;
+  font-size: rem(40px);
   font-family: 'Gagalin Regular';
   top: 100%;
   left: 50%;
   transform-origin: 0 0;
-  margin-top: -20px;
+  margin-top: rem(-20px);
 }
 
 .accordeon-menu__content {
@@ -64,7 +68,7 @@
 }
 
 .accordeon-menu__text {
-  padding: 60px 30px;
+  padding: rem(60px) rem(30px);
   color: #ffffff;
 }
 
