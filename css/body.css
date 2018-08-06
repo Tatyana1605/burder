@@ -1,65 +1,69 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0; }
+/*
+Error: Undefined mixin 'tablets'.
+        on line 87 of D:\RS\PROJ2\css\body.scss, in `tablets'
+        from line 87 of D:\RS\PROJ2\css\body.scss
 
-html,
-body {
-  font-size: rem(14px);
-  line-height: 1.42;
-  position: relative;
-  color: black;
-  font-family: 'Ubuntu-Light'; }
+82: .title {
+83:   font-size: rem(72px) ;
+84:   font-family: 'Gagalin Regular';
+85:   color: #f9b43b;
+86:   text-align: left;
+87:   @include tablets {
+88:     text-align: center;
+89:   }
+90:   @include phones {
+91:     font-size: rem(50px);
+92:   }
 
-.wrapper {
-  position: relative;
-  width: 100%;
-  min-width: rem(940px)rem(20px);
-  min-height: 100%;
-  overflow: hidden; }
-
-.group {
-  width: 100%;
-  height: 100vh;
-  min-height: rem(650px); }
-
-.position {
-  height: 100%;
-  width: rem(940px);
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center; }
-
-p {
-  color: #aeaba9; }
-
-a {
-  text-decoration: none; }
-
-li {
-  list-style-type: none; }
-
-.title {
-  font-size: rem(72px);
-  font-family: 'Gagalin Regular';
-  color: #f9b43b;
-  text-align: left; }
-
-.title__we {
-  color: #2f3234;
-  text-align: center; }
-
-.title__menu {
-  color: #ffffff; }
-
-.title__form {
-  text-align: center; }
-
-.we__title {
-  font-size: rem(24px);
-  font-family: 'Lifehack Medium';
-  color: #2f3234;
-  text-align: center; }
-
-/*# sourceMappingURL=body.css.map */
+Backtrace:
+D:\RS\PROJ2\css\body.scss:87:in `tablets'
+D:\RS\PROJ2\css\body.scss:87
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `with_mixin'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:350:in `visit_mixin'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `map'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+C:/Program Files/Koala/bin/sass:22:in `load'
+C:/Program Files/Koala/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined mixin 'tablets'.\A         on line 87 of D:\RS\PROJ2\css\body.scss, in `tablets'\A         from line 87 of D:\RS\PROJ2\css\body.scss\A \A 82: .title {\A 83:   font-size: rem(72px) ;\A 84:   font-family: 'Gagalin Regular';\A 85:   color: #f9b43b;\A 86:   text-align: left;\A 87:   @include tablets {\A 88:     text-align: center;\A 89:   }\A 90:   @include phones {\A 91:     font-size: rem(50px);\A 92:   }"; }

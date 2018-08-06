@@ -6,6 +6,8 @@
   width: 100%;
   background: url('../img/bg2.png') center center / cover no-repeat ;
   padding: 0;
+
+  
 }
 
 
@@ -13,6 +15,10 @@
 .we__list {
   display: flex;
   align-items: flex-start;
+
+  @include phones  {
+    flex-direction: column;
+  }
 }
 
 .we__item {
@@ -21,19 +27,40 @@
   flex-direction: column;
   align-items: center;
   padding: rem(40px) rem(15px);
+
+  @include phones  {
+    flex-direction: initial;
+  }
 }
 .we__img {
   padding-bottom: rem(25px);
 }
 
+.we__img-elem {
+  @include phones   {
+    height: rem(100px);
+    width: rem(100px);
+  }
+}
+
 .we__content {
   text-align: center;
+
+  @include phones  {
+    text-align: left;
+    float: left;
+    margin-left: rem(25px);
+  }
+  
   
 }
 
 .we__text {
   padding-top: rem(20px);
-
+  @include phones  {
+    float: left;
+  }
+  
 }
 
 // .like {

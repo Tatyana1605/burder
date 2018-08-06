@@ -11,27 +11,66 @@
 .form {
   display: flex;
   flex-direction: column;
+  @include tablets {
+    padding-left: 15%;
+    padding-right: 15%;
+    flex-direction: column;
+    align-items: center;
+  }
+  @include phones {
+    padding-left: 0;
+    padding-right:0;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .form__bottom, .form__top {
   display: flex;
   margin-bottom: rem(20px);
+  @include tablets {
+    flex-direction: column;
+    align-items: center;
+  }
+  
 }
 
 .form__left {
   width: 50%;;
   overflow: hidden;
+
+  @include tablets {
+    width: 100%;
+  }
+  
   
 } 
 
 .form__right {
   width: 50%;
   overflow: hidden;
+  @include tablets {
+    width: 100%;
+  }
 }
 
 .form__row {
   display: flex;
+
+  // @include phones {
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-items: center;
+  // }
   
+}
+
+.form__row-bottom {
+  @include phones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .form__row::after, 
@@ -49,6 +88,16 @@
   &:last-child {
     margin-left: 0;
   }
+  @include tablets{
+    &:last-child {
+      margin-right: 0;
+  } 
+}
+  @include phones {
+    &:last-child {
+      margin-right: 0;
+  } 
+  }
  
 
 }
@@ -61,29 +110,7 @@
   margin-top: rem(18px);
 }
 
-// .form__input-radio {
-//   visibility: hidden;
-//   position: absolute;
-// }
 
-// .form__input-radio:checked + .form__radio-text {
-//   opacity: 1;
-// }
-
-// .form__radio-text {
-//   display: flex;
-//   align-items: center;
-// }
-
-// .form__btn {
-//   width: 15px;
-//   height: 15px;
-//   background-color: #ffffff;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   margin-right: 10px;
-// }
 
 
 

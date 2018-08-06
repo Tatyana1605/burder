@@ -1,86 +1,69 @@
-.team {
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  position: relative;
-  background: url("../img/SBS_1255-X2.png") center center/cover no-repeat; }
+/*
+Error: Undefined mixin 'tablets'.
+        on line 20 of D:\RS\PROJ2\css\team.scss, in `tablets'
+        from line 20 of D:\RS\PROJ2\css\team.scss
 
-.team__right {
-  position: absolute;
-  top: 0;
-  right: rem(0px);
-  bottom: 0;
-  width: 50%;
-  overflow: hidden;
-  background-color: rgba(57, 59, 60, 0.93); }
+15:   bottom: 0;
+16:   width: 50%;
+17:   overflow: hidden;
+18:   background-color: rgba($color: #393b3c, $alpha: 0.93);
+19: 
+20:   @include tablets {
+21:     width: 100%;
+22:   }
+23: 
+24: 
+25: }
 
-.team__cent {
-  padding: rem(85px) rem(90px);
-  overflow: hidden; }
-
-.accordeon-team__list {
-  display: flex;
-  flex-direction: column; }
-
-.accordeon-team__elem {
-  padding-top: rem(35px); }
-  .accordeon-team__elem_activ .accordeon-team__contener {
-    height: 100%;
-    padding-top: rem(14px);
-    padding-left: rem(14px); }
-  .accordeon-team__elem_activ .accordeon-team__btn {
-    color: #f9b43b; }
-    .accordeon-team__elem_activ .accordeon-team__btn:before {
-      transform: rotate(-180deg);
-      position: relative;
-      top: rem(-6px); }
-
-.accordeon-team__btn {
-  color: #ffffff;
-  text-transform: uppercase;
-  font-family: 'Gagalin Regular';
-  font-size: rem(14px);
-  display: flex;
-  align-items: flex-end;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  position: relative; }
-  .accordeon-team__btn:before {
-    content: "";
-    height: 0;
-    width: 0;
-    border: rem(6px) solid transparent;
-    border-top-color: #f9b43b;
-    margin-right: rem(10px); }
-
-.accordeon-team__contener {
-  display: flex;
-  overflow: hidden;
-  height: 0; }
-
-.accordeon-team__img {
-  height: 100%;
-  width: 100%; }
-
-.accordeon-team__picture {
-  height: rem(100px);
-  width: rem(100px);
-  border-radius: 50%;
-  overflow: hidden;
-  flex: 1 0 auto;
-  margin-right: rem(16px); }
-
-.accordeon-team__text {
-  float: right; }
-
-.accordeon-team__title {
-  color: #ffffff;
-  font-family: 'Ubuntu-B';
-  margin-bottom: rem(14px); }
-
-.accordeon-team__p {
-  color: #ffffff; }
-
-/*# sourceMappingURL=team.css.map */
+Backtrace:
+D:\RS\PROJ2\css\team.scss:20:in `tablets'
+D:\RS\PROJ2\css\team.scss:20
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `with_mixin'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:350:in `visit_mixin'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `map'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+C:/Program Files/Koala/bin/sass:22:in `load'
+C:/Program Files/Koala/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined mixin 'tablets'.\A         on line 20 of D:\RS\PROJ2\css\team.scss, in `tablets'\A         from line 20 of D:\RS\PROJ2\css\team.scss\A \A 15:   bottom: 0;\A 16:   width: 50%;\A 17:   overflow: hidden;\A 18:   background-color: rgba($color: #393b3c, $alpha: 0.93);\A 19: \A 20:   @include tablets {\A 21:     width: 100%;\A 22:   }\A 23: \A 24: \A 25: }"; }

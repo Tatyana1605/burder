@@ -1,157 +1,69 @@
-.forma {
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  position: relative;
-  background: url("../img/form.png") center center/cover no-repeat; }
+/*
+Error: Undefined mixin 'tablets'.
+        on line 14 of D:\RS\PROJ2\css\form.scss, in `tablets'
+        from line 14 of D:\RS\PROJ2\css\form.scss
 
-.form {
-  display: flex;
-  flex-direction: column; }
+9: }
+10: 
+11: .form {
+12:   display: flex;
+13:   flex-direction: column;
+14:   @include tablets {
+15:     padding-left: 15%;
+16:     padding-right: 15%;
+17:     flex-direction: column;
+18:     align-items: center;
+19:   }
 
-.form__bottom, .form__top {
-  display: flex;
-  margin-bottom: rem(20px); }
-
-.form__left {
-  width: 50%;
-  overflow: hidden; }
-
-.form__right {
-  width: 50%;
-  overflow: hidden; }
-
-.form__row {
-  display: flex; }
-
-.form__row::after,
-.form__row::before {
-  content: '';
-  display: block;
-  clear: both; }
-
-.form__block {
-  flex: 1;
-  margin-right: rem(20px); }
-  .form__block:last-child {
-    margin-left: 0; }
-
-.form__block-title,
-.form__radio-text,
-.form__chec-text {
-  color: #ffffff;
-  margin-bottom: rem(10px);
-  margin-top: rem(18px); }
-
-.form__input {
-  border-radius: rem(5px);
-  border: #ffffff;
-  outline: none;
-  height: rem(35px);
-  width: 100%;
-  padding: rem(5px); }
-  .form__input:focus {
-    border: rem(2px) solid #e35028;
-    transition: 0.3s; }
-
-.form__textarea {
-  resize: none;
-  border: #ffffff;
-  outline: none;
-  height: rem(115px);
-  width: 100%;
-  border-radius: rem(5px);
-  padding: rem(5px); }
-  .form__textarea:focus {
-    border: rem(2px) solid #e35028;
-    transition: 0.3s; }
-
-.form__radio {
-  padding: rem(0px) rem(20px) rem(0px) rem(0px); }
-
-.form__input-radio {
-  position: absolute;
-  visibility: hidden; }
-
-.form__radio-text {
-  display: flex;
-  align-items: center;
-  font-size: rem(14px);
-  margin-right: rem(5px); }
-
-.form__input-radio:checked + .form__radio-text .form__btn:after {
-  width: rem(7px);
-  height: rem(7px); }
-
-.form__input-radio:not(checked) + .form__radio-text .form__btn:after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: rem(0px);
-  height: rem(0px);
-  border-radius: 50%;
-  background-color: #e35028;
-  transition: 1s; }
-
-.form__btn {
-  vertical-align: middle;
-  position: relative;
-  top: 0;
-  left: 0;
-  display: inline-block;
-  width: rem(15px);
-  height: rem(15px);
-  border-radius: 50%;
-  border: rem(1px) solid #fff;
-  margin-right: rem(5px);
-  background-color: #ffffff; }
-
-.form__row_right {
-  justify-content: flex-end;
-  padding: 0 rem(10px); }
-
-.form__row::after,
-.form__row::before {
-  content: '';
-  display: block;
-  clear: both; }
-
-.form__chec {
-  padding-bottom: rem(15px); }
-
-.form__input-chec {
-  position: absolute;
-  visibility: hidden; }
-
-.form__chec-img {
-  height: 10px;
-  width: 10px;
-  margin-left: 15%;
-  margin-bottom: 25%; }
-
-.form__chec-text {
-  display: flex;
-  align-items: center;
-  font-size: rem(14px);
-  margin-right: rem(5px); }
-
-.form__input-chec:checked + .form__chec-img {
-  opacity: 1;
-  transition: 1s; }
-
-.form__btn-chec {
-  vertical-align: middle;
-  position: relative;
-  top: 0;
-  left: 0;
-  display: inline-block;
-  width: rem(15px);
-  height: rem(15px);
-  border: rem(1px) solid #fff;
-  margin-right: rem(5px);
-  background-color: #ffffff; }
-
-/*# sourceMappingURL=form.css.map */
+Backtrace:
+D:\RS\PROJ2\css\form.scss:14:in `tablets'
+D:\RS\PROJ2\css\form.scss:14
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `with_mixin'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:350:in `visit_mixin'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `map'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+C:/Program Files/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+C:/Program Files/Koala/bin/sass:22:in `load'
+C:/Program Files/Koala/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined mixin 'tablets'.\A         on line 14 of D:\RS\PROJ2\css\form.scss, in `tablets'\A         from line 14 of D:\RS\PROJ2\css\form.scss\A \A 9: }\A 10: \A 11: .form {\A 12:   display: flex;\A 13:   flex-direction: column;\A 14:   @include tablets {\A 15:     padding-left: 15%;\A 16:     padding-right: 15%;\A 17:     flex-direction: column;\A 18:     align-items: center;\A 19:   }"; }

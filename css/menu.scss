@@ -7,6 +7,9 @@
   position: relative;
   background: url('../img/menu.png') center center / cover no-repeat ;
   padding: rem(90px);
+  @include phones {
+    padding: rem(35px);
+  } 
   // display: flex;
 }
 

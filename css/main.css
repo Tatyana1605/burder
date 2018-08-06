@@ -5,6 +5,9 @@
 
 html,
 body {
+  height: 100%; }
+
+body {
   font-size: 1rem;
   line-height: 1.42;
   position: relative;
@@ -14,7 +17,6 @@ body {
 .wrapper {
   position: relative;
   width: 100%;
-  min-width: 68.5714285714rem;
   min-height: 100%;
   overflow: hidden; }
 
@@ -25,7 +27,7 @@ body {
 
 .position {
   height: 100%;
-  width: 67.1428571429rem;
+  width: 95%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -45,6 +47,12 @@ li {
   font-family: 'Gagalin Regular';
   color: #f9b43b;
   text-align: left; }
+  @media screen and (max-width: 768px) {
+    .title {
+      text-align: center; } }
+  @media screen and (max-width: 480px) {
+    .title {
+      font-size: 3.5714285714rem; } }
 
 .title__we {
   color: #2f3234;
@@ -52,15 +60,27 @@ li {
 
 .title__menu {
   color: #ffffff; }
+  @media screen and (max-width: 768px) {
+    .title__menu {
+      float: left; } }
+  @media screen and (max-width: 480px) {
+    .title__menu {
+      float: left; } }
 
 .title__form {
   text-align: center; }
+  @media screen and (max-width: 768px) {
+    .title__form {
+      font-size: 4.2857142857rem; } }
 
 .we__title {
   font-size: 1.7142857143rem;
   font-family: 'Lifehack Medium';
   color: #2f3234;
   text-align: center; }
+  @media screen and (max-width: 480px) {
+    .we__title {
+      float: left; } }
 
 @font-face {
   font-family: 'Gagalin Regular';
@@ -181,28 +201,51 @@ li {
   justify-content: center;
   align-items: center;
   flex: 1; }
-  @media screen and (max-width: rem(768px)) {
-    .first__contenren {
-      flex-direction: column; } }
 
 .first__cent {
   display: flex;
   justify-content: center; }
+  @media screen and (max-width: 768px) {
+    .first__cent {
+      display: flex;
+      flex-direction: column;
+      align-items: center; } }
 
 .img_burg {
   width: 33.5714285714rem;
   height: 32.1428571429rem;
   float: left; }
+  @media screen and (max-width: 480px) {
+    .img_burg {
+      width: 50%;
+      height: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center; } }
+
+@media screen and (max-width: 480px) {
+  .first__picture {
+    display: flex;
+    flex-direction: column;
+    align-items: center; } }
 
 .first__text {
   padding-left: 0.7142857143rem;
   line-height: 3.5714285714rem; }
+  @media screen and (max-width: 768px) {
+    .first__text {
+      justify-content: center;
+      align-items: center;
+      margin-top: -5rem; } }
 
 .subtext {
   font-size: 4.6428571429rem;
   font-family: 'Lifehack Medium';
   color: #fff;
   text-align: left; }
+  @media screen and (max-width: 768px) {
+    .subtext {
+      text-align: center; } }
 
 .strel {
   text-align: center;
@@ -220,6 +263,9 @@ li {
 .we__list {
   display: flex;
   align-items: flex-start; }
+  @media screen and (max-width: 480px) {
+    .we__list {
+      flex-direction: column; } }
 
 .we__item {
   flex: 1;
@@ -227,15 +273,31 @@ li {
   flex-direction: column;
   align-items: center;
   padding: 2.8571428571rem 1.0714285714rem; }
+  @media screen and (max-width: 480px) {
+    .we__item {
+      flex-direction: initial; } }
 
 .we__img {
   padding-bottom: 1.7857142857rem; }
 
+@media screen and (max-width: 480px) {
+  .we__img-elem {
+    height: 7.1428571429rem;
+    width: 7.1428571429rem; } }
+
 .we__content {
   text-align: center; }
+  @media screen and (max-width: 480px) {
+    .we__content {
+      text-align: left;
+      float: left;
+      margin-left: 1.7857142857rem; } }
 
 .we__text {
   padding-top: 1.4285714286rem; }
+  @media screen and (max-width: 480px) {
+    .we__text {
+      float: left; } }
 
 .reviews {
   top: 0;
@@ -261,6 +323,10 @@ li {
     opacity: 1;
     visibility: visible;
     transition: 1s; }
+  @media screen and (max-width: 768px) {
+    .reviews__item {
+      height: 25%;
+      width: 50%; } }
 
 .reviews__hover {
   position: absolute;
@@ -272,20 +338,33 @@ li {
   color: #ffffff;
   opacity: 0;
   visibility: hidden; }
+  @media screen and (max-width: 768px) {
+    .reviews__hover {
+      text-align: center; } }
 
 .reviews__hover-activ {
   opacity: 1;
   color: #ffffff; }
+  @media screen and (max-width: 768px) {
+    .reviews__hover-activ {
+      text-align: center; } }
 
 .reviews__title {
   padding: 3.2857142857rem 0 1.8571428571rem 1.2857142857rem;
   text-transform: uppercase;
   color: #ffffff;
   font-family: 'Ubuntu-Medium'; }
+  @media screen and (max-width: 768px) {
+    .reviews__title {
+      padding-top: 1.4285714286rem;
+      padding-bottom: 0.7142857143rem; } }
 
 .reviews__text {
   padding: 0 2.1428571429rem 1.0714285714rem 1.2857142857rem;
   color: #ffffff; }
+  @media screen and (max-width: 480px) {
+    .reviews__text {
+      display: none; } }
 
 .btn {
   padding-left: 1.2857142857rem; }
@@ -348,6 +427,9 @@ li {
   width: 50%;
   overflow: hidden;
   background-color: rgba(57, 59, 60, 0.93); }
+  @media screen and (max-width: 768px) {
+    .team__right {
+      width: 100%; } }
 
 .team__cent {
   padding: 6.0714285714rem 6.4285714286rem;
@@ -388,11 +470,18 @@ li {
     border: 0.4285714286rem solid transparent;
     border-top-color: #f9b43b;
     margin-right: 0.7142857143rem; }
+  @media screen and (max-width: 768px) {
+    .accordeon-team__btn {
+      justify-content: center; } }
 
 .accordeon-team__contener {
   display: flex;
   overflow: hidden;
   height: 0; }
+  @media screen and (max-width: 768px) {
+    .accordeon-team__contener {
+      flex-direction: column;
+      align-items: center; } }
 
 .accordeon-team__img {
   height: 100%;
@@ -408,6 +497,10 @@ li {
 
 .accordeon-team__text {
   float: right; }
+  @media screen and (max-width: 768px) {
+    .accordeon-team__text {
+      text-align: center;
+      margin-top: 0.7142857143rem; } }
 
 .accordeon-team__title {
   color: #ffffff;
@@ -425,6 +518,9 @@ li {
   position: relative;
   background: url("../img/menu.png") center center/cover no-repeat;
   padding: 6.4285714286rem; }
+  @media screen and (max-width: 480px) {
+    .menu {
+      padding: 2.5rem; } }
 
 .accordeon-menu {
   position: absolute;
@@ -486,21 +582,49 @@ li {
 .form {
   display: flex;
   flex-direction: column; }
+  @media screen and (max-width: 768px) {
+    .form {
+      padding-left: 15%;
+      padding-right: 15%;
+      flex-direction: column;
+      align-items: center; } }
+  @media screen and (max-width: 480px) {
+    .form {
+      padding-left: 0;
+      padding-right: 0;
+      flex-direction: column;
+      align-items: center; } }
 
 .form__bottom, .form__top {
   display: flex;
   margin-bottom: 1.4285714286rem; }
+  @media screen and (max-width: 768px) {
+    .form__bottom, .form__top {
+      flex-direction: column;
+      align-items: center; } }
 
 .form__left {
   width: 50%;
   overflow: hidden; }
+  @media screen and (max-width: 768px) {
+    .form__left {
+      width: 100%; } }
 
 .form__right {
   width: 50%;
   overflow: hidden; }
+  @media screen and (max-width: 768px) {
+    .form__right {
+      width: 100%; } }
 
 .form__row {
   display: flex; }
+
+@media screen and (max-width: 480px) {
+  .form__row-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center; } }
 
 .form__row::after,
 .form__row::before {
@@ -513,6 +637,12 @@ li {
   margin-right: 1.4285714286rem; }
   .form__block:last-child {
     margin-left: 0; }
+  @media screen and (max-width: 768px) {
+    .form__block:last-child {
+      margin-right: 0; } }
+  @media screen and (max-width: 480px) {
+    .form__block:last-child {
+      margin-right: 0; } }
 
 .form__block-title,
 .form__radio-text,
@@ -648,12 +778,20 @@ li {
 
 .footer__cent {
   display: flex; }
+  @media screen and (max-width: 480px) {
+    .footer__cent {
+      flex-direction: column;
+      align-items: center; } }
 
 .footer__left {
   width: 50%;
   float: left;
   align-items: center;
   display: flex; }
+  @media screen and (max-width: 480px) {
+    .footer__left {
+      width: 100%;
+      justify-content: center; } }
 
 .footer__right {
   width: 50%;
@@ -661,6 +799,10 @@ li {
   align-items: center;
   display: flex;
   justify-content: flex-end; }
+  @media screen and (max-width: 480px) {
+    .footer__right {
+      width: 100%;
+      justify-content: center; } }
 
 .address__street {
   color: #ffffff;

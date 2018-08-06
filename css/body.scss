@@ -6,7 +6,13 @@
   margin: 0;
   padding: 0;
 }
+
 html,
+body {
+  height: 100%;
+}
+
+
 body {
   font-size: rem(14px);
   line-height: 1.42;
@@ -31,7 +37,7 @@ body {
 .wrapper {
   position: relative;
   width: 100%;
-  min-width: rem(940px) + rem(20px);
+  // min-width: rem(940px) + rem(20px);
   min-height: 100%;
   overflow: hidden;
   // display: flex;
@@ -48,7 +54,8 @@ body {
 
 .position {
   height: 100%;
-  width: rem(940px);
+  width: 95%;
+  // max-width: 940px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -77,6 +84,12 @@ li {
   font-family: 'Gagalin Regular';
   color: #f9b43b;
   text-align: left;
+  @include tablets {
+    text-align: center;
+  }
+  @include phones {
+    font-size: rem(50px);
+  }
 
   
 }
@@ -88,10 +101,23 @@ li {
 
 .title__menu {
   color: #ffffff;
+
+  @include tablets {
+    float: left;
+  }
+  @include phones{
+    float: left;
+  }
+
 }
 
 .title__form {
   text-align: center;
+
+  @include tablets {
+    font-size: rem(60px);
+  }
+  
 }
 
 .we__title {
@@ -99,4 +125,8 @@ li {
   font-family: 'Lifehack Medium';
   color: #2f3234;
   text-align: center;
+  @include phones  {
+    float: left;
+  }
+  
 }

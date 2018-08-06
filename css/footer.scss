@@ -9,6 +9,10 @@
 
 .footer__cent {
   display: flex;
+  @include phones {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .footer__left {
@@ -16,6 +20,10 @@
   float: left;
   align-items: center;
   display: flex;
+  @include phones {
+    width: 100%;
+    justify-content: center;
+  }
 }
 
 .footer__right {
@@ -24,6 +32,10 @@
   align-items: center;
   display: flex;
   justify-content: flex-end;
+  @include phones {
+    width: 100%;
+    justify-content: center;
+  }
 }
 
 .address__street {

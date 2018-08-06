@@ -17,6 +17,10 @@
   overflow: hidden;
   background-color: rgba($color: #393b3c, $alpha: 0.93);
 
+  @include tablets {
+    width: 100%;
+  }
+
 
 }
 
@@ -28,6 +32,7 @@
 .accordeon-team__list {
   display: flex;
   flex-direction: column;
+  
 }
 
 .accordeon-team__elem {
@@ -49,6 +54,8 @@
       }
 
     }
+
+    
 }
 
 
@@ -74,7 +81,9 @@
       margin-right: rem(10px);
      
     }
-
+    @include tablets {
+      justify-content: center;
+    }
   
 }
    
@@ -84,6 +93,11 @@
   display: flex;
   overflow: hidden;
   height: 0;
+
+  @include tablets {
+    flex-direction: column;
+    align-items: center;
+  }
   
   
 
@@ -107,6 +121,11 @@
 }
 .accordeon-team__text {
   float: right;
+
+  @include tablets {
+    text-align: center;
+    margin-top: rem(10px);
+  }
 }
 
 .accordeon-team__title {

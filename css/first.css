@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'tablets'.
-        on line 94 of D:\RS\PROJ2\css\first.scss, in `tablets'
-        from line 94 of D:\RS\PROJ2\css\first.scss
+        on line 101 of D:\RS\PROJ2\css\first.scss, in `tablets'
+        from line 101 of D:\RS\PROJ2\css\first.scss
 
-89:   justify-content: center;
-90:   align-items: center;
-91:   flex: 1;
-92: 
-93: 
-94:     @include tablets {
-95:     flex-direction: column;
-96: 
-97:   }
-98:   
-99: }
+96: }
+97: 
+98: .first__cent {
+99:   display: flex;
+100:   justify-content: center;
+101:   @include tablets {
+102:     display: flex;
+103:     flex-direction: column;
+104:     align-items: center;
+105:   }
+106: 
 
 Backtrace:
-D:\RS\PROJ2\css\first.scss:94:in `tablets'
-D:\RS\PROJ2\css\first.scss:94
+D:\RS\PROJ2\css\first.scss:101:in `tablets'
+D:\RS\PROJ2\css\first.scss:101
 C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -66,4 +66,4 @@ C:/Program Files/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablets'.\A         on line 94 of D:\RS\PROJ2\css\first.scss, in `tablets'\A         from line 94 of D:\RS\PROJ2\css\first.scss\A \A 89:   justify-content: center;\A 90:   align-items: center;\A 91:   flex: 1;\A 92: \A 93: \A 94:     @include tablets {\A 95:     flex-direction: column;\A 96: \A 97:   }\A 98:   \A 99: }"; }
+  content: "Error: Undefined mixin 'tablets'.\A         on line 101 of D:\RS\PROJ2\css\first.scss, in `tablets'\A         from line 101 of D:\RS\PROJ2\css\first.scss\A \A 96: }\A 97: \A 98: .first__cent {\A 99:   display: flex;\A 100:   justify-content: center;\A 101:   @include tablets {\A 102:     display: flex;\A 103:     flex-direction: column;\A 104:     align-items: center;\A 105:   }\A 106: "; }

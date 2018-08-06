@@ -1,10 +1,10 @@
-$tablets: rem(768px);
-$phones: rem(480px);
+$tablets: 768px;
+$phones: 480px;
 
-@import "media.scss";
+@import "media";
 
-@import "body.scss";
-@import "font-face.scss";
+@import "body";
+@import "font-face";
 @import "button.scss";
 @import "first.scss";
 @import "we.scss";
