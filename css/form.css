@@ -68,31 +68,90 @@
     transition: 0.3s; }
 
 .form__radio {
-  padding: rem(20px) rem(20px) rem(0px) rem(0px); }
+  padding: rem(0px) rem(20px) rem(0px) rem(0px); }
 
-.form__chec {
-  padding-top: rem(24px);
-  padding-bottom: rem(18px); }
-
-.form__btn:after {
-  content: "";
+.form__input-radio {
   position: absolute;
-  background-color: #4b73b5;
+  visibility: hidden; }
+
+.form__radio-text {
+  display: flex;
+  align-items: center;
+  font-size: rem(14px);
+  margin-right: rem(5px); }
+
+.form__input-radio:checked + .form__radio-text .form__btn:after {
+  width: rem(7px);
+  height: rem(7px); }
+
+.form__input-radio:not(checked) + .form__radio-text .form__btn:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: rem(0px);
+  height: rem(0px);
+  border-radius: 50%;
+  background-color: #e35028;
   transition: 1s; }
 
 .form__btn {
   vertical-align: middle;
   position: relative;
-  width: rem(16px);
-  height: rem(16px);
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: rem(15px);
+  height: rem(15px);
   border-radius: 50%;
-  border: rem(1px) solid #4b73b5;
-  margin-right: rem(10px); }
+  border: rem(1px) solid #fff;
+  margin-right: rem(5px);
+  background-color: #ffffff; }
 
-.form__input-radio:checked {
-  color: #e35028; }
+.form__row_right {
+  justify-content: flex-end;
+  padding: 0 rem(10px); }
 
-.form__input-chec:checked {
-  color: #e35028; }
+.form__row::after,
+.form__row::before {
+  content: '';
+  display: block;
+  clear: both; }
+
+.form__chec {
+  padding-bottom: rem(15px); }
+
+.form__input-chec {
+  position: absolute;
+  visibility: hidden; }
+
+.form__chec-img {
+  height: 10px;
+  width: 10px;
+  margin-left: 15%;
+  margin-bottom: 25%; }
+
+.form__chec-text {
+  display: flex;
+  align-items: center;
+  font-size: rem(14px);
+  margin-right: rem(5px); }
+
+.form__input-chec:checked + .form__chec-img {
+  opacity: 1;
+  transition: 1s; }
+
+.form__btn-chec {
+  vertical-align: middle;
+  position: relative;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: rem(15px);
+  height: rem(15px);
+  border: rem(1px) solid #fff;
+  margin-right: rem(5px);
+  background-color: #ffffff; }
 
 /*# sourceMappingURL=form.css.map */

@@ -91,17 +91,18 @@
   flex: 1;
 
 
-    @include tablets () {
+    @include tablets {
     flex-direction: column;
 
   }
-  // padding-top: rem(50px);
+  
 }
 
 .first__cent {
   display: flex;
   justify-content: center;
-} 
+
+ } 
 
 
 

@@ -8,11 +8,11 @@ Error: Undefined mixin 'tablets'.
 91:   flex: 1;
 92: 
 93: 
-94:     @include tablets () {
+94:     @include tablets {
 95:     flex-direction: column;
 96: 
 97:   }
-98:   // padding-top: rem(50px);
+98:   
 99: }
 
 Backtrace:
@@ -66,4 +66,4 @@ C:/Program Files/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablets'.\A         on line 94 of D:\RS\PROJ2\css\first.scss, in `tablets'\A         from line 94 of D:\RS\PROJ2\css\first.scss\A \A 89:   justify-content: center;\A 90:   align-items: center;\A 91:   flex: 1;\A 92: \A 93: \A 94:     @include tablets () {\A 95:     flex-direction: column;\A 96: \A 97:   }\A 98:   // padding-top: rem(50px);\A 99: }"; }
+  content: "Error: Undefined mixin 'tablets'.\A         on line 94 of D:\RS\PROJ2\css\first.scss, in `tablets'\A         from line 94 of D:\RS\PROJ2\css\first.scss\A \A 89:   justify-content: center;\A 90:   align-items: center;\A 91:   flex: 1;\A 92: \A 93: \A 94:     @include tablets {\A 95:     flex-direction: column;\A 96: \A 97:   }\A 98:   \A 99: }"; }

@@ -13,8 +13,20 @@ body {
   position: relative;
   color: black;
   font-family: 'Ubuntu-Light';
+  
 }
 
+
+
+// html {
+//   @include tablets {
+//       font-size: rem(13px);
+//   }
+
+//   @include phones {
+//       font-size: rem(12px);
+//   }
+// }
 
 .wrapper {
   position: relative;
