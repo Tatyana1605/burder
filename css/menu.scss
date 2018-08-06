@@ -7,8 +7,13 @@
   position: relative;
   background: url('../img/menu.png') center center / cover no-repeat ;
   padding: rem(90px);
+
+  @include tablets {
+    padding-left: rem(20px);
+   
+  }
   @include phones {
-    padding: rem(35px);
+    padding-left: rem(35px);
   } 
   // display: flex;
 }
