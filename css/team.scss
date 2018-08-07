@@ -79,10 +79,30 @@
       border: rem(6px) solid transparent;
       border-top-color: #f9b43b;
       margin-right: rem(10px);
-     
+
+      @include phones  {
+        height: 0;
+        width: 0;
+        border: rem(8px) solid transparent;
+        border-top-color: #f9b43b;
+        margin-right: rem(10px);
+      }
+
+      @include tablets {
+        height: 0;
+        width: 0;
+        border: rem(8px) solid transparent;
+        border-top-color: #f9b43b;
+        margin-right: rem(10px);
+      }
     }
     @include tablets {
       justify-content: center;
+      font-size: rem(24px);
+    }
+
+    @include phones  {
+      font-size: rem(24px);
     }
   
 }

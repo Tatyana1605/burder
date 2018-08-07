@@ -88,6 +88,12 @@
      padding-bottom: rem(10px);
      
    }
+   @include phones {
+    font-family: 'Gagalin Regular';
+    font-size: rem(24px);
+    padding-top: rem(40px);
+    padding-bottom: rem(25px);
+  }
  }
 
  .reviews__text {

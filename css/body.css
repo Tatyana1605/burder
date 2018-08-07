@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'tablets'.
-        on line 87 of D:\RS\PROJ2\css\body.scss, in `tablets'
-        from line 87 of D:\RS\PROJ2\css\body.scss
+        on line 28 of D:\RS\PROJ2\css\body.scss, in `tablets'
+        from line 28 of D:\RS\PROJ2\css\body.scss
 
-82: .title {
-83:   font-size: rem(72px) ;
-84:   font-family: 'Gagalin Regular';
-85:   color: #f9b43b;
-86:   text-align: left;
-87:   @include tablets {
-88:     text-align: center;
-89:   }
-90:   @include phones {
-91:     font-size: rem(50px);
-92:   }
+23: }
+24: 
+25: 
+26: 
+27: html {
+28:   @include tablets {
+29:       font-size: rem(13px);
+30:   }
+31: 
+32:   @include phones {
+33:       font-size: rem(12px);
 
 Backtrace:
-D:\RS\PROJ2\css\body.scss:87:in `tablets'
-D:\RS\PROJ2\css\body.scss:87
+D:\RS\PROJ2\css\body.scss:28:in `tablets'
+D:\RS\PROJ2\css\body.scss:28
 C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -66,4 +66,4 @@ C:/Program Files/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablets'.\A         on line 87 of D:\RS\PROJ2\css\body.scss, in `tablets'\A         from line 87 of D:\RS\PROJ2\css\body.scss\A \A 82: .title {\A 83:   font-size: rem(72px) ;\A 84:   font-family: 'Gagalin Regular';\A 85:   color: #f9b43b;\A 86:   text-align: left;\A 87:   @include tablets {\A 88:     text-align: center;\A 89:   }\A 90:   @include phones {\A 91:     font-size: rem(50px);\A 92:   }"; }
+  content: "Error: Undefined mixin 'tablets'.\A         on line 28 of D:\RS\PROJ2\css\body.scss, in `tablets'\A         from line 28 of D:\RS\PROJ2\css\body.scss\A \A 23: }\A 24: \A 25: \A 26: \A 27: html {\A 28:   @include tablets {\A 29:       font-size: rem(13px);\A 30:   }\A 31: \A 32:   @include phones {\A 33:       font-size: rem(12px);"; }

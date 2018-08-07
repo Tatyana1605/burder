@@ -5,6 +5,9 @@
   width: 100%;
   position: absolute;
   background: url('../img/footer.png') center center / cover no-repeat ;
+  @include phones  {
+    height: rem(115px);
+  }
 }
 
 .footer__cent {
@@ -23,6 +26,7 @@
   @include phones {
     width: 100%;
     justify-content: center;
+    text-align: center;
   }
 }
 
@@ -36,18 +40,23 @@
     width: 100%;
     justify-content: center;
   }
+  @include phones  {
+    padding-top: rem(15px);
+  }
 }
 
 .address__street {
   color: #ffffff;
   padding-bottom: rem(7px);
   font-style: normal;
+ 
 }
 
 .address__tel {
   color: #d14925;
   font-family: 'Ubuntu-B';
   font-style: normal;
+  
 }
 
 .address__tel-img {
@@ -68,4 +77,6 @@
 .social__img {
   width: rem(20px);
   height: rem(20px);
+  
+
 }

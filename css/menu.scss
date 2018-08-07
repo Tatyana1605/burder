@@ -28,6 +28,10 @@
   width: 70%;
   display: flex;
   justify-content: flex-end;
+
+  @include tablets {
+    width: 100%;
+  }
 }
 
 .accordeon-menu__list {
@@ -41,6 +45,8 @@
       .accordeon-menu__content {
         width: 100%;
         transition: 0.3s;
+        
+
       }
       .accordeon-menu__btn-text {
         color: #e7a93f;
@@ -67,12 +73,17 @@
   left: 50%;
   transform-origin: 0 0;
   margin-top: rem(-20px);
+
+  @include phones  {
+    margin-top: rem(-60px);
+  }
 }
 
 .accordeon-menu__content {
   overflow: hidden;
   width: 0;
   background-color: rgba($color: #4c4e50, $alpha: 0.93);
+  
 }
 
 .accordeon-menu__text {

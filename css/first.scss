@@ -84,6 +84,7 @@
   height: rem(25px);
   margin-left: rem(20px);
   margin-right: 2vw;
+  margin-top: 4%;
 
   @include tablets {
     display: block;
@@ -102,7 +103,7 @@
   width: 100%;
   height: 100%;
   z-index: 1000;
-
+  
 }
 
 .btn__nav_btn-decor {
@@ -123,11 +124,12 @@
 
   @include tablets {
     display: flex;
+    margin-left: auto;
    
   }
   @include phones {
     display: flex;
-    
+    margin-left: auto;
   }
   
 }
@@ -166,8 +168,8 @@
   height: rem(450px);
   float: left;
   @include phones {
-    width: 50%;
-    height: 50%;
+    width: rem(335px);
+    height: rem(335px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -209,6 +211,10 @@
   @include tablets {
     text-align: center;
   }
+  @include phones {
+    font-size: rem(54px);
+  }
+
  }
  
 .strel {

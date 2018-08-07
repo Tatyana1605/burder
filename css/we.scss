@@ -30,6 +30,7 @@
 
   @include phones  {
     flex-direction: initial;
+    padding: rem(20px) rem(10px);
   }
 }
 .we__img {

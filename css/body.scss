@@ -24,15 +24,15 @@ body {
 
 
 
-// html {
-//   @include tablets {
-//       font-size: rem(13px);
-//   }
+html {
+  @include tablets {
+      font-size: rem(13px);
+  }
 
-//   @include phones {
-//       font-size: rem(12px);
-//   }
-// }
+  @include phones {
+      font-size: rem(12px);
+  }
+}
 
 .wrapper {
   position: relative;
@@ -61,6 +61,13 @@ body {
   flex-direction: column;
   justify-content: center;
   // text-align: center;
+
+  @include tablets {
+    width: 100%;
+  }
+  @include phones {
+    width: 100%;
+  }
 }
 
 
@@ -88,7 +95,7 @@ li {
     text-align: center;
   }
   @include phones {
-    font-size: rem(50px);
+    font-size: rem(63px);
   }
 
   
@@ -117,6 +124,8 @@ li {
   @include tablets {
     font-size: rem(60px);
   }
+
+  
   
 }
 
@@ -126,7 +135,7 @@ li {
   color: #2f3234;
   text-align: center;
   @include phones  {
-    float: left;
+    text-align: left;
   }
   
 }
