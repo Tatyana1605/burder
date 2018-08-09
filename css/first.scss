@@ -17,7 +17,6 @@
   display: flex;
   align-items: center;
   height: 100%;
-  width: 95%;
   margin: 0 auto;
 
 }
@@ -50,9 +49,10 @@
 }
 
 .nav__list {
-  margin-left: rem(10px);
+  margin-left: rem(5px);
   display: flex;
   align-items: center;
+  
   &:first-child {
     &::before {
       display: none;
@@ -65,7 +65,7 @@
     height: rem(4px);
     background: #ffffff;
     border-radius: 50%;
-    margin: 0 rem(13px);
+    margin: 0 rem(6px);
   }
 }
 
@@ -152,6 +152,7 @@
 .first__cent {
   display: flex;
   justify-content: center;
+  
   @include tablets {
     display: flex;
     flex-direction: column;
@@ -179,12 +180,21 @@
 }
 
 .first__picture {
+  width: 50%;
+   @include tablets {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
   @include phones {
     
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    width: 100%;
   }
 
 }
@@ -192,11 +202,19 @@
 .first__text {
   padding-left: rem(10px);
   line-height: rem(50px);
+  width: 50%;
   
    @include tablets {
     justify-content: center;
     align-items: center;
     margin-top: rem(-70px);
+    width: 100%;
+  }
+  @include phones {
+    justify-content: center;
+    align-items: center;
+    margin-top: rem(-70px);
+    width: 100%;
   }
   
   

@@ -5,6 +5,16 @@
   width: rem(60px);
   padding-top: rem(30px);
   opacity: 0.5;
+
+  @include tablets {
+    left: auto;
+    bottom: auto;
+    top: 0;
+    right: 0;
+    
+  }
+  
+
 }
 
 .mass__img {
