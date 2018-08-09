@@ -1,0 +1,33 @@
+.mass {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: rem(60px);
+  padding-top: rem(30px);
+  opacity: 0.5;
+}
+
+.mass__img {
+  position: absolute;
+  display: inline-block;
+  top: rem(10px);
+  left: 0;
+  
+}
+
+.mass__numb {
+  position: relative;
+  margin-bottom: rem(10px);
+  font-family: 'Gagalin Regular';
+  color: #ffffff;
+  font-size: rem(20px);
+  margin-left: rem(10px);
+}
+
+.mass__text {
+  position: relative;
+  font-family: 'Gagalin Regular';
+  color: #ffffff;
+  text-align: center;
+
+}
