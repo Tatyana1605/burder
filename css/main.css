@@ -976,34 +976,40 @@ li {
   position: relative;
   background: linear-gradient(to bottom, #f9b43b 0%, #eb8d38 50%, #f9b43b 100%); }
 
-.burger__container {
-  position: relative;
-  display: flex;
-  min-height: 33.9285714286rem;
-  width: 100%;
-  height: 50%; }
-  @media screen and (max-width: 768px) {
-    .burger__container {
-      display: flex;
-      flex-direction: column;
-      align-items: center; } }
-
 .burger__list {
-  position: relative;
-  display: block; }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1; }
 
 .burger__elem {
+  display: flex;
   position: relative;
-  display: block;
-  min-height: 33.9285714286rem;
-  width: 100%;
-  height: 50%; }
+  min-height: 33.9285714286rem; }
+  @media screen and (max-width: 768px) {
+    .burger__elem {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 85%;
+      width: 85%; } }
+  @media screen and (max-width: 480px) {
+    .burger__elem {
+      width: 100%; } }
 
 .burger__col {
   display: flex;
   justify-content: center;
   flex-direction: column;
   flex: 1; }
+  @media screen and (max-width: 768px) {
+    .burger__col {
+      justify-content: flex-end; } }
+
+@media screen and (max-width: 480px) {
+  .burger__col-img {
+    width: 25.3571428571rem;
+    height: 17.5rem; } }
 
 .burger__text {
   color: #ffffff;
@@ -1040,10 +1046,10 @@ li {
   cursor: pointer; }
   .slider_left {
     transform: rotate(90deg);
-    left: 2.8571428571rem; }
+    left: 0; }
   .slider_right {
     transform: rotate(-90deg);
-    right: 2.8571428571rem; }
+    right: 0; }
 
 .composition {
   position: absolute;
@@ -1137,5 +1143,47 @@ li {
   font-family: 'Gagalin Regular';
   color: #ffffff;
   text-align: center; }
+
+.nav__tablets {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #2f3133;
+  z-index: 10000;
+  transition: 0.3s; }
+
+.nav__tablets_logo {
+  position: absolute;
+  top: 5%;
+  left: 5%; }
+
+.nav__tablets_closes {
+  position: absolute;
+  top: 5%;
+  right: 5%; }
+
+.nav__tablets_link {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  color: #ffffff;
+  padding: 1.4285714286rem;
+  text-transform: uppercase; }
+
+.nav__tablets_link:after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  bottom: 0;
+  left: 50%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff; }
 
 /*# sourceMappingURL=main.css.map */

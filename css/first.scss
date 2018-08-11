@@ -86,9 +86,12 @@
   margin-right: 2vw;
   margin-top: 4%;
 
+ 
   @include tablets {
     display: block;
-  }
+     
+    }
+  
   @include phones {
     display: block;
   }
