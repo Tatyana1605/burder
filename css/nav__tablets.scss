@@ -13,10 +13,16 @@
   opacity: 0;
   transition: 0.3s;
 }
-.nav__tablets_activ {
+
+@include tablets {
+  .nav__tablets_activ {
     top: 0;
     opacity: 1;
   }
+  
+   
+  }
+
 
 
 
