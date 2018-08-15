@@ -1,0 +1,54 @@
+
+.reviews__comment {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -100%;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgba($color: #2e3133, $alpha: 0.92);
+  z-index: 2000;
+
+  &_activ {
+    top: 0%;
+  }
+}
+
+.reviews__comment-windows {
+  position: relative;
+  background-color: #ffffff;
+  padding: rem(25px) rem(20px);
+  border-radius: rem(10px);
+  border: rem(1px) solid #ffffff;
+  width: 80%;
+
+}
+
+.reviews__comment-text {
+  text-align: justify;
+  height: 100%;
+  overflow: hidden;
+  color: black;
+  font-family: 'Gagalin Regular';
+  text-transform: uppercase;
+
+}
+
+.reviews__comment-p {
+  color: black;
+  font-family: 'Ubuntu-Light';
+  padding-top: rem(20px);
+  text-transform: none;
+}
+
+.reviews__comment-btn {
+  position: absolute;
+  padding: rem(15px);
+  top: 0;
+  right: 0;
+
+}
+

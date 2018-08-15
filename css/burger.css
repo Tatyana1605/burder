@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'tablets'.
-        on line 65 of D:\RS\PROJ2\css\burger.scss, in `tablets'
-        from line 65 of D:\RS\PROJ2\css\burger.scss
+        on line 34 of D:\RS\PROJ2\css\burger.scss, in `tablets'
+        from line 34 of D:\RS\PROJ2\css\burger.scss
 
-60:   // justify-content: center;
-61:   min-height: rem(475px);
-62:   // width: 100%;
-63:   // height: 50%;
-64: 
-65:   @include tablets {
-66:    display: flex;
-67:    flex-direction: column;
-68:    align-items: center;
-69:    height: 85%;
-70:    width: 85%;
+29:   // justify-content: center;
+30:   min-height: rem(475px);
+31:   // width: 100%;
+32:   // height: 50%;
+33: 
+34:   @include tablets {
+35:    display: flex;
+36:    flex-direction: column;
+37:    align-items: center;
+38:    height: 85%;
+39:    width: 85%;
 
 Backtrace:
-D:\RS\PROJ2\css\burger.scss:65:in `tablets'
-D:\RS\PROJ2\css\burger.scss:65
+D:\RS\PROJ2\css\burger.scss:34:in `tablets'
+D:\RS\PROJ2\css\burger.scss:34
 C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -66,4 +66,4 @@ C:/Program Files/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablets'.\A         on line 65 of D:\RS\PROJ2\css\burger.scss, in `tablets'\A         from line 65 of D:\RS\PROJ2\css\burger.scss\A \A 60:   // justify-content: center;\A 61:   min-height: rem(475px);\A 62:   // width: 100%;\A 63:   // height: 50%;\A 64: \A 65:   @include tablets {\A 66:    display: flex;\A 67:    flex-direction: column;\A 68:    align-items: center;\A 69:    height: 85%;\A 70:    width: 85%;"; }
+  content: "Error: Undefined mixin 'tablets'.\A         on line 34 of D:\RS\PROJ2\css\burger.scss, in `tablets'\A         from line 34 of D:\RS\PROJ2\css\burger.scss\A \A 29:   // justify-content: center;\A 30:   min-height: rem(475px);\A 31:   // width: 100%;\A 32:   // height: 50%;\A 33: \A 34:   @include tablets {\A 35:    display: flex;\A 36:    flex-direction: column;\A 37:    align-items: center;\A 38:    height: 85%;\A 39:    width: 85%;"; }

@@ -652,10 +652,10 @@ li {
 
 .accordeon-menu__elem {
   display: flex; }
-  .accordeon-menu__elem_activ:hover .accordeon-menu__content {
+  .accordeon-menu__elem_activ .accordeon-menu__content {
     width: 100%;
     transition: 0.3s; }
-  .accordeon-menu__elem_activ:hover .accordeon-menu__btn-text {
+  .accordeon-menu__elem_activ .accordeon-menu__btn-text {
     color: #e7a93f; }
 
 .accordeon-menu__btn {
@@ -976,14 +976,18 @@ li {
   position: relative;
   background: linear-gradient(to bottom, #f9b43b 0%, #eb8d38 50%, #f9b43b 100%); }
 
+.burger__burger {
+  height: 100%;
+  width: 100%;
+  display: flex; }
+
 .burger__list {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex: 1; }
+  align-items: center; }
 
 .burger__elem {
-  display: flex;
+  display: flex !important;
   position: relative;
   min-height: 33.9285714286rem; }
   @media screen and (max-width: 768px) {
@@ -1013,7 +1017,7 @@ li {
 
 .burger__text {
   color: #ffffff;
-  height: 100px;
+  height: 10.7142857143rem;
   overflow: hidden;
   margin-top: 2.8571428571rem;
   margin-bottom: 1.4285714286rem; }
@@ -1038,18 +1042,27 @@ li {
     font-size: 2em; }
 
 .slider {
-  position: absolute;
+  position: relative;
   top: 50%;
   width: 1.9285714286rem;
   height: 1.0714285714rem;
   color: #ffffff;
-  cursor: pointer; }
+  cursor: pointer;
+  z-index: 100; }
   .slider_left {
     transform: rotate(90deg);
-    left: 0; }
+    left: -0.7142857143rem;
+    right: auto; }
+    @media screen and (max-width: 768px) {
+      .slider_left {
+        left: 0; } }
   .slider_right {
     transform: rotate(-90deg);
-    right: 0; }
+    right: -0.7142857143rem;
+    left: auto; }
+    @media screen and (max-width: 768px) {
+      .slider_right {
+        right: 0; } }
 
 .composition {
   position: absolute;
@@ -1156,7 +1169,7 @@ li {
   background-color: #2f3133;
   z-index: 10000;
   opacity: 0;
-  transition: 0.3s; }
+  transition: opacity 0.3s; }
 
 @media screen and (max-width: 768px) {
   .nav__tablets_activ {
@@ -1269,5 +1282,48 @@ li {
 
 .slick-arrow.slick-hidden {
   display: none; }
+
+.reviews__comment {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -100%;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgba(46, 49, 51, 0.92);
+  z-index: 2000; }
+  .reviews__comment_activ {
+    top: 0%; }
+
+.reviews__comment-windows {
+  position: relative;
+  background-color: #ffffff;
+  padding: 1.7857142857rem 1.4285714286rem;
+  border-radius: 0.7142857143rem;
+  border: 0.0714285714rem solid #ffffff;
+  width: 80%; }
+
+.reviews__comment-text {
+  text-align: justify;
+  height: 100%;
+  overflow: hidden;
+  color: black;
+  font-family: 'Gagalin Regular';
+  text-transform: uppercase; }
+
+.reviews__comment-p {
+  color: black;
+  font-family: 'Ubuntu-Light';
+  padding-top: 1.4285714286rem;
+  text-transform: none; }
+
+.reviews__comment-btn {
+  position: absolute;
+  padding: 1.0714285714rem;
+  top: 0;
+  right: 0; }
 
 /*# sourceMappingURL=main.css.map */

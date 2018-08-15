@@ -41,7 +41,7 @@
 
 .accordeon-menu__elem {
   display: flex;
-    &_activ:hover {
+    &_activ {
       .accordeon-menu__content {
         width: 100%;
         transition: 0.3s;
