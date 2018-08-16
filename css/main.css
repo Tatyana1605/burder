@@ -894,12 +894,13 @@ li {
   padding: 0 0.7142857143rem; }
 
 .map {
+  position: relative;
   top: 0;
   left: 0;
-  height: 100%;
-  width: 100%;
-  position: relative;
-  background: url("../img/map.png") center center/cover no-repeat; }
+  bottom: 0;
+  right: 0;
+  height: 100vh;
+  width: 100vw; }
 
 .footer {
   bottom: 0;
@@ -979,17 +980,22 @@ li {
 .burger__burger {
   height: 100%;
   width: 100%;
-  display: flex; }
-
-.burger__list {
   display: flex;
   justify-content: center;
   align-items: center; }
 
+.burger__list {
+  display: flex;
+  height: 32.8571428571rem;
+  width: 64.2857142857rem;
+  overflow: hidden; }
+
 .burger__elem {
   display: flex !important;
   position: relative;
-  min-height: 33.9285714286rem; }
+  min-height: 100%;
+  flex: 1 0 auto;
+  width: 100%; }
   @media screen and (max-width: 768px) {
     .burger__elem {
       display: flex;
@@ -1051,14 +1057,14 @@ li {
   z-index: 100; }
   .slider_left {
     transform: rotate(90deg);
-    left: -0.7142857143rem;
+    left: -0.3571428571rem;
     right: auto; }
     @media screen and (max-width: 768px) {
       .slider_left {
         left: 0; } }
   .slider_right {
     transform: rotate(-90deg);
-    right: -0.7142857143rem;
+    right: -0.3571428571rem;
     left: auto; }
     @media screen and (max-width: 768px) {
       .slider_right {
@@ -1211,7 +1217,6 @@ li {
 /* Slider */
 .slick-slider {
   position: relative;
-  display: block;
   box-sizing: border-box;
   -webkit-touch-callout: none;
   -webkit-user-select: none;

@@ -14,21 +14,28 @@
   height: 100%;
   width: 100%;
   display: flex ;
+  justify-content: center;
+  align-items: center;
 }
 
 .burger__list {
   display: flex  ;
-  justify-content: center;
-  align-items: center;
-  // flex: 1;
+  height: rem(460px);
+  width: rem(900px);
+  overflow: hidden;
+  // justify-content: center;
+  // align-items: center;
+  // // flex: 1;
 }
+
 
 .burger__elem {
   display: flex !important;
   position: relative;
   // justify-content: center;
-  min-height: rem(475px);
-  // width: 100%;
+  min-height: 100%;
+  flex: 1 0 auto;
+  width: 100%;
   // height: 50%;
 
   @include tablets {
@@ -108,7 +115,7 @@
   
   &_left {
     transform: rotate(90deg);
-    left: rem(-10px);
+    left: rem(-5px);
     right: auto;
     @include tablets {
      left: 0;
@@ -117,7 +124,7 @@
   }
   &_right {
     transform: rotate(-90deg);
-    right: rem(-10px);
+    right: rem(-5px);
     left: auto;
     @include tablets {
       right: 0;
