@@ -62,7 +62,7 @@ $(document).ready(function(){
 
     // отзывы
 
-    $('.button').on('click', function(e){
+    $('.button__rev').on('click', function(e){
       e.preventDefault();
     $('.reviews__comment').addClass('reviews__comment_activ');
     });
@@ -160,8 +160,98 @@ $(document).ready(function(){
             .add(myPlacemark2)
             .add(myPlacemark3);
 
-            // myMap.behaviors.disable('scrollZoom');
+        myMap.behaviors.disable('scrollZoom');
             
     });
 
+    // form
+
+    const myForma = document.querySelector('#myForma');
+    const sendButton = document.querySelector('#sendButton');
+
+    sendButton.addEventListener('click', function(e) {
+        e.preventDefault();
+
+            if (validateForm(myForma)) {
+                const data =  {
+                    nameFirst: myForma.elements.nameFirst.value,
+                    phone: myForma.elements.phone.value,
+                    email: myForma.elements.email.value,
+                    street: myForma.elements.street.value,
+                    house: myForma.elements.house.value,
+                    float: myForma.elements.float.value,
+                    number: myForma.elements.number.value,
+                    comment: myForma.elements.comment.value,
+                    radio: myForma.elements.radio.checked,
+                    checkbox: myForma.elements.checkbox.checked
+                   
+
+                };
+
+                const xhr = new XMLHttpRequest();
+                xhr.responseType = 'json';
+                xhr.open('POST', 'https://webdev-api.loftschool.com/sendmail');
+                xhr.send(JSON.stringify(data));
+                xhr.addEventListener('load', () => {
+                    if (xhr.response.status) {
+                        console.log('Все заполнено!');
+                    }
+                });
+            }
+
+    });
+
+    function validateForm(form) {
+        let valid = true;
+
+        if (!validateField(form.elements.nameFirst)) {
+            valid = false;
+        }
+        if (!validateField(form.elements.phone)) {
+            valid = false;
+        }
+        if (!validateField(form.elements.email)) {
+            valid = false;
+        }
+        if (!validateField(form.elements.street)) {
+            valid = false;
+        }
+        if (!validateField(form.elements.house)) {
+            valid = false;
+        }
+        if (!validateField(form.elements.float)) {
+            valid = false;
+        }
+        if (!validateField(form.elements.number)) {
+            valid = false;
+        }
+        if (!validateField(form.elements.comment)) {
+            valid = false;
+        }
+        if (!validateField(form.elements.radio)) {
+            valid = false;
+        }
+        if (!validateField(form.elements.checkbox)) {
+            valid = false;
+        }
+
+        return valid;
+    }
+
+    function validateField(field) {
+        field.nextElementSibling.textContent = field.validationMessage;
+        return field.checkValidity();
+    }
+
+
+    $('#sendButton').on('click', function(e){
+        e.preventDefault();
+      $('.form__open').addClass('form__open_activ');
+      });
+  
+       $('#formClose').on('click', function(e){
+        e.preventDefault();
+       $('.form__open').removeClass('form__open_activ');
+       });
+  
 });

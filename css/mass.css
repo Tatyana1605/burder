@@ -1,23 +1,23 @@
 /*
 Error: Undefined mixin 'tablets'.
-        on line 29 of D:\RS\PROJ2\css\burger.scss, in `tablets'
-        from line 29 of D:\RS\PROJ2\css\burger.scss
+        on line 9 of D:\RS\PROJ2\css\mass.scss, in `tablets'
+        from line 9 of D:\RS\PROJ2\css\mass.scss
 
-24:   width: rem(900px);
-25:   overflow: hidden;
-26:   // justify-content: center;
-27:   // align-items: center;
-28:   // // flex: 1;
-29:   @include tablets {
-30:     
-31:     height: rem(650px);
-32:     
-33:      
-34:    }
+4:   bottom: 0;
+5:   width: rem(60px);
+6:   padding-top: rem(30px);
+7:   opacity: 0.5;
+8: 
+9:   @include tablets {
+10:     left: auto;
+11:     bottom: auto;
+12:     top: 0;
+13:     right: 0;
+14:     
 
 Backtrace:
-D:\RS\PROJ2\css\burger.scss:29:in `tablets'
-D:\RS\PROJ2\css\burger.scss:29
+D:\RS\PROJ2\css\mass.scss:9:in `tablets'
+D:\RS\PROJ2\css\mass.scss:9
 C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
 C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Program Files/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
@@ -66,4 +66,4 @@ C:/Program Files/Koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'tablets'.\A         on line 29 of D:\RS\PROJ2\css\burger.scss, in `tablets'\A         from line 29 of D:\RS\PROJ2\css\burger.scss\A \A 24:   width: rem(900px);\A 25:   overflow: hidden;\A 26:   // justify-content: center;\A 27:   // align-items: center;\A 28:   // // flex: 1;\A 29:   @include tablets {\A 30:     \A 31:     height: rem(650px);\A 32:     \A 33:      \A 34:    }"; }
+  content: "Error: Undefined mixin 'tablets'.\A         on line 9 of D:\RS\PROJ2\css\mass.scss, in `tablets'\A         from line 9 of D:\RS\PROJ2\css\mass.scss\A \A 4:   bottom: 0;\A 5:   width: rem(60px);\A 6:   padding-top: rem(30px);\A 7:   opacity: 0.5;\A 8: \A 9:   @include tablets {\A 10:     left: auto;\A 11:     bottom: auto;\A 12:     top: 0;\A 13:     right: 0;\A 14:     "; }

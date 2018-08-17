@@ -26,6 +26,12 @@
   // justify-content: center;
   // align-items: center;
   // // flex: 1;
+  @include tablets {
+    
+    height: rem(650px);
+    
+     
+   }
 }
 
 
@@ -34,6 +40,7 @@
   position: relative;
   // justify-content: center;
   min-height: 100%;
+  height: rem(460px);
   flex: 1 0 auto;
   width: 100%;
   // height: 50%;
@@ -42,7 +49,7 @@
    display: flex;
    flex-direction: column;
    align-items: center;
-   height: 85%;
+   height: 90%;
    width: 85%;
     
   }
@@ -60,11 +67,16 @@
   flex: 1;
   @include tablets {
     justify-content: flex-end;
+    align-items: center;
   }
   
 }
 
 .burger__col-img {
+  @include tablets {
+    width: 95%;
+    height: 100%;
+  }
   @include phones {
     width: rem(355px);
     height: rem(245px);
@@ -74,7 +86,7 @@
 
 .burger__text {
   color: #ffffff;
-  height: rem(150px);
+  // height: rem(150px);
   overflow: hidden;
   margin-top: rem(40px);
   margin-bottom: rem(20px);

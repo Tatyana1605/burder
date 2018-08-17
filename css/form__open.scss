@@ -1,0 +1,32 @@
+
+.form__open {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -100%;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgba($color: #3d4042, $alpha: 0.92);
+  z-index: 2000;
+
+  &_activ {
+    top: 0%;
+  }
+}
+
+.form__open-windows {
+  position: relative;
+  background-color: #ffffff;
+  padding: rem(25px) rem(20px);
+  border-radius: rem(10px);
+  border: rem(1px) solid #ffffff;
+  width: 30%;
+  text-align: center;
+}
+
+.form__open-text {
+  padding: rem(20px);
+}

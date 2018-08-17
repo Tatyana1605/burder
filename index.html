@@ -843,7 +843,7 @@
                 </p>
               </div>
               <div class="btn">
-                <a href="#" class="button"> Подробнее </a>
+                <a href="#" class="button button__rev"> Подробнее </a>
               </div>
               </div>
               
@@ -861,7 +861,7 @@
                 </p>
               </div>
               <div class="btn">
-                <a href="#" class="button"> Подробнее </a>
+                <a href="#" class="button button__rev" > Подробнее </a>
               </div>
               </div>
               
@@ -879,7 +879,7 @@
                 </p>
               </div>
               <div class="btn">
-                <a href="#" class="button"> Подробнее </a>
+                <a href="#" class="button button__rev" > Подробнее </a>
               </div>
               </div>
               
@@ -897,7 +897,7 @@
                 </p>
               </div>
               <div class="btn">
-                <a href="#" class="button"> Подробнее </a>
+                <a href="#" class="button button__rev" > Подробнее </a>
               </div>
               </div>
               
@@ -915,7 +915,7 @@
                 </p>
               </div>
               <div class="btn">
-                <a href="#" class="button"> Подробнее </a>
+                <a href="#" class="button button__rev" > Подробнее </a>
               </div>
               </div>
               
@@ -933,7 +933,7 @@
                 </p>
               </div>
               <div class="btn">
-                <a href="#" class="button"> Подробнее </a>
+                <a href="#" class="button button__rev"> Подробнее </a>
               </div>
               </div>
               
@@ -951,7 +951,7 @@
                 </p>
               </div>
               <div class="btn">
-                <a href="#" class="button"> Подробнее </a>
+                <a href="#" class="button button__rev"> Подробнее </a>
               </div>
               </div>
               
@@ -969,7 +969,7 @@
                     </p>
                   </div>
                   <div class="btn">
-                    <a href="#" class="button"> Подробнее </a>
+                    <a href="#" class="button button__rev" > Подробнее </a>
                   </div>
               </div>
               
@@ -986,47 +986,47 @@
     </section>
 
     <section class="group">
-      <div class="forma">
+      <div class="forma" >
         <div class="position">
           <h1 class="title title__form">
             Закажите доставку
           </h1>
-          <form action="" class="form">
+          <form action="" class="form" id="myForma" >
             <div class="form__top">
                 <div class="form__left">
                     <div class="form__row">
                         <label class="form__block">
                           <div class="form__block-title">Имя</div>
-                          <input type="text" class="form__input">
+                          <input type="text" name="nameFirst" class="form__input"  required  >
                         </label>
                         <label class="form__block">
                           <div class="form__block-title" >Телефон</div>
-                          <input type="text" class="form__input" placeholder="89212264923">
+                          <input type="text" name="phone" class="form__input" placeholder="89212264923" required> 
                         </label>
                     </div>
                     <div class="form__row">
                       <label class="form__block">
-                        <div class="form__block-title"> Улица </div>
-                        <input type="text" class="form__input">
+                        <div class="form__block-title"> Электронный адрес </div>
+                        <input type="email" name="email" class="form__input" required>
                       </label>
     
                     </div>
                     <div class="form__row">
                         <label class="form__block">
-                            <div class="form__block-title"> Дом </div>
-                            <input type="text" class="form__input">
+                            <div class="form__block-title"> Улица </div>
+                            <input type="text" name="street" class="form__input">
                         </label>
                         <label class="form__block">
-                            <div class="form__block-title"> Корпус </div>
-                            <input type="text" class="form__input">
+                            <div class="form__block-title"> Дом </div>
+                            <input type="text" name="house" class="form__input">
                         </label>
                         <label class="form__block">
                             <div class="form__block-title"> Квартира </div>
-                            <input type="text" class="form__input">
+                            <input type="text" name="float" class="form__input">
                         </label>
                         <label class="form__block">
                             <div class="form__block-title"> Этаж </div>
-                            <input type="text" class="form__input">
+                            <input type="text" name="number" class="form__input">
                         </label>
     
                     </div>
@@ -1036,7 +1036,7 @@
                   <div class="form__row">
                       <label class="form__block">
                           <div class="form__block-title"> Коментарий </div>
-                          <textarea class="form__textarea">
+                          <textarea  name="comment" class="form__textarea" required>
                             </textarea>
                       </label>
                       
@@ -1075,13 +1075,13 @@
 
                   </div>
                   <div class="form__row">
-                      <a href="#" class="button">
+                      <a href="#" class="button" id="sendButton">
                           
                           Заказать
               
                         
                       </a>
-                      <a href="#" class="button button__transparen">
+                      <a href="#" class="button button__transparen" id="sendTran" >
                           
                          Очистить
               
@@ -1256,6 +1256,22 @@
         <img src="./img/close.png" alt="" class="reviews__comment-img">
       </a>
     </div>
+
+  </div>
+
+  <div class="form__open">
+    <div class="form__open-windows">
+        <div class="form__open-text">
+            Сообщение отправлено
+          </div>
+          <a href="#" class="button" id="formClose">
+                                
+              Закрыть
+      
+            
+          </a>
+    </div>
+    
 
   </div>
   <script type="text/javascript" src="./script/jquery-3.3.1.min.js"></script>
