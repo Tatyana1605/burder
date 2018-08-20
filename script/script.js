@@ -50,11 +50,24 @@ $(document).ready(function(){
 
   //  меню
 
+//    $('.accordeon-menu__elem').on('click', function(e){
+//     e.preventDefault();
+//    $('.accordeon-menu__elem').not(this).removeClass('accordeon-menu__elem_activ');
+//    $(this).toggleClass('accordeon-menu__elem_activ').next('accordeon-menu__elem').slideToggle();
+//    });
+
    $('.accordeon-menu__elem').on('click', function(e){
-    e.preventDefault();
-   $('.accordeon-menu__elem').not(this).removeClass('accordeon-menu__elem_activ');
+     e.preventDefault();
+        $('.accordeon-menu__list').addClass('accordeon-menu__list_active');
+        $('.accordeon-menu__elem').not(this).removeClass('accordeon-menu__elem_activ');
    $(this).toggleClass('accordeon-menu__elem_activ').next('accordeon-menu__elem').slideToggle();
-   });
+    });
+
+     $('.accordeon-menu__close').on('click', function(e){
+         e.preventDefault();
+         $('.accordeon-menu__list').removeClass('accordeon-menu__list_active');
+    $('.accordeon-menu__elem').removeClass('accordeon-menu__elem_activ');
+        });
 
     //  блок бургер
     $('.burger__list').slick();
@@ -172,18 +185,18 @@ $(document).ready(function(){
     sendButton.addEventListener('click', function(e) {
         e.preventDefault();
 
-            if (validateForm(myForma)) {
+            if (validateForm (myForma)) {
                 const data =  {
-                    nameFirst: myForma.elements.nameFirst.value,
-                    phone: myForma.elements.phone.value,
-                    email: myForma.elements.email.value,
-                    street: myForma.elements.street.value,
-                    house: myForma.elements.house.value,
-                    float: myForma.elements.float.value,
-                    number: myForma.elements.number.value,
-                    comment: myForma.elements.comment.value,
-                    radio: myForma.elements.radio.checked,
-                    checkbox: myForma.elements.checkbox.checked
+                    nameFirst:myForma.elements.nameFirst.value,
+                    phone:myForma.elements.phone.value,
+                    email:myForma.elements.email.value,
+                    // street: myForma.elements.street.value,
+                    // house: myForma.elements.house.value,
+                    // float: myForma.elements.float.value,
+                    // number: myForma.elements.number.value,
+                    comment:myForma.elements.comment.value
+                    // radio: myForma.elements.radio.checked,
+                    // checkbox: myForma.elements.checkbox.checked
                    
 
                 };
@@ -238,7 +251,7 @@ $(document).ready(function(){
         return valid;
     }
 
-    function validateField(field) {
+    function validateField (field) {
         field.nextElementSibling.textContent = field.validationMessage;
         return field.checkValidity();
     }

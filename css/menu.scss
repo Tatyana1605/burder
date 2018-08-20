@@ -91,4 +91,27 @@
   color: #ffffff;
 }
 
+.accordeon-menu__close {
+  display: none;
+ }
+ 
+ @include phones  { 
+  .accordeon-menu__close {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
 
+
+    
+  }
+ 
+  .accordeon-menu__list_active .accordeon-menu__elem {
+    display: none;
+  }
+ 
+  .accordeon-menu__list_active .accordeon-menu__elem_activ {
+    display: flex;
+  }
+ }
