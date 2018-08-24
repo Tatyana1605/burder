@@ -25,63 +25,37 @@ $(document).ready(function(){
         $(this).toggleClass('accordeon-team__elem_activ').next('accordeon-team__elem').slideToggle();
       });
 
-      // $('.accordeon-team__elem_activ').on('click', function(e){
-      //   e.preventDefault();
-      //   $('.accordeon-team__elem').toggleClass('in').next().slideToggle();
-        
-      // });
-
-    
-
-
-  //   $('.accordeon-team__elem').on('click', function(e){
-  //       e.preventDefault();
-  //       $('.accordeon-team__elem').removeClass('accordeon-team__elem_activ');
-  //       $(this).addClass('accordeon-team__elem_activ');
-  //  });
-
-  //  $('.accordeon-team__elem').on('click', function(e){
-  //       e.preventDefault();
-  //       $('.accordeon-team__elem').removeClass('accordeon-team__elem_activ');
-  //      $(this).toggleClass('accordeon-team__elem_activ');
-  //  });
-
-    // $('accordeon-team__elem').on('click', function(e){
-    // e.preventDefault(); 
-    // $('accordeon-team__elem').removeClass('accordeon-team__elem_activ');
-    // $(this).toggleClass('accordeon-team__elem_activ');
-    // });
-    
+      
    
 
 
   //  меню
 
-//   $('.accordeon-menu__btn').on('click', function(e){
-//     e.preventDefault();
-//        $('.accordeon-menu__list').addClass('accordeon-menu__list_active');
-//        if($(this).closest('.accordeon-menu__elem').hasClass('accordeon-menu__elem_activ')) {
-//            $('.accordeon-menu__elem').removeClass('accordeon-menu__elem_activ');
-//            $(this).closest('.accordeon-menu__elem').removeClass('accordeon-menu__elem_activ');
-//        } else {
-//            $('.accordeon-menu__elem').removeClass('accordeon-menu__elem_activ');
-//            $(this).closest('.accordeon-menu__elem').addClass('accordeon-menu__elem_activ')
-//        }
+  $('.accordeon-menu__btn').on('click', function(e){
+    e.preventDefault();
+       $('.accordeon-menu__list').addClass('accordeon-menu__list_active');
+       if($(this).closest('.accordeon-menu__elem').hasClass('accordeon-menu__elem_activ')) {
+           $('.accordeon-menu__elem').removeClass('accordeon-menu__elem_activ');
+           $(this).closest('.accordeon-menu__elem').removeClass('accordeon-menu__elem_activ');
+       } else {
+           $('.accordeon-menu__elem').removeClass('accordeon-menu__elem_activ');
+           $(this).closest('.accordeon-menu__elem').addClass('accordeon-menu__elem_activ')
+       }
 
-//    });
+   });
 
-   $('.accordeon-menu__elem').on('click', function(e){
-     e.preventDefault();
-        $('.accordeon-menu__list').addClass('accordeon-menu__list_active');
-        $('.accordeon-menu__elem').not(this).removeClass('accordeon-menu__elem_activ');
-   $(this).toggleClass('accordeon-menu__elem_activ').next('accordeon-menu__elem').slideToggle();
-    });
+//    $('.accordeon-menu__elem').on('click', function(e){
+//      e.preventDefault();
+//         $('.accordeon-menu__list').addClass('accordeon-menu__list_active');
+//         $('.accordeon-menu__elem').not(this).removeClass('accordeon-menu__elem_activ');
+//    $(this).toggleClass('accordeon-menu__elem_activ').next('accordeon-menu__elem').slideToggle();
+//     });
 
-     $('.accordeon-menu__close').on('click', function(e){
-         e.preventDefault();
-         $('.accordeon-menu__list').removeClass('accordeon-menu__list_active');
-    $('.accordeon-menu__elem').removeClass('accordeon-menu__elem_activ');
-        });
+//      $('.accordeon-menu__close').on('click', function(e){
+//          e.preventDefault();
+//          $('.accordeon-menu__list').removeClass('accordeon-menu__list_active');
+//     $('.accordeon-menu__elem').removeClass('accordeon-menu__elem_activ');
+//         });
 
     //  блок бургер
     $('.burger__list').slick();
