@@ -17,6 +17,14 @@ $(document).ready(function(){
          $('.nav__tablets').removeClass('nav__tablets_activ');
      });
 
+     $('.nav__tablets_elem').on('click', function(e){
+       
+         $('.nav__tablets').removeClass('nav__tablets_activ');
+         console.log('!');
+     });
+
+
+
     //  блок команда
 
       $('.accordeon-team__elem').on('click', function(e){
@@ -43,6 +51,15 @@ $(document).ready(function(){
        }
 
    });
+
+   $('.accordeon-menu__close').on('click', function(e){
+    e.preventDefault();
+       $('.accordeon-menu__list').removeClass('accordeon-menu__list_active');
+       $('.accordeon-menu__elem').removeClass('accordeon-menu__elem_activ');
+       
+
+   });
+
 
 //    $('.accordeon-menu__elem').on('click', function(e){
 //      e.preventDefault();
@@ -167,28 +184,29 @@ $(document).ready(function(){
 
     // form
 
-    const myForma = document.querySelector('#myForma');
+    const myForm = document.querySelector('#myForm');
     const sendButton = document.querySelector('#sendButton');
 
-    sendButton.addEventListener('click', function(e) {
-        e.preventDefault();
+    sendButton.addEventListener('click', event => {
+        event.preventDefault();
 
-            if (validateForm (myForma)) {
-                const data =  {
-                    nameFirst:myForma.elements.nameFirst.value,
-                    phone:myForma.elements.phone.value,
-                    email:myForma.elements.email.value,
+        
+            if (validateForm(myForm)) {
+                const data = {
+                    nameFirst: myForm.elements.nameFirst.value,
+                    phone: myForm.elements.phone.value,
+                    email: myForm.elements.email.value,
                     // street: myForma.elements.street.value,
                     // house: myForma.elements.house.value,
                     // float: myForma.elements.float.value,
                     // number: myForma.elements.number.value,
-                    comment:myForma.elements.comment.value
+                    comment: myForm.elements.comment.value
                     // radio: myForma.elements.radio.checked,
                     // checkbox: myForma.elements.checkbox.checked
                    
 
                 };
-
+                
                 const xhr = new XMLHttpRequest();
                 xhr.responseType = 'json';
                 xhr.open('POST', 'https://webdev-api.loftschool.com/sendmail');
@@ -239,9 +257,9 @@ $(document).ready(function(){
         return valid;
     }
 
-    function validateField (field) {
-        field.nextElementSibling.textContent = field.validationMessage;
-        return field.checkValidity();
+    function validateField(field) {
+         field.nextElementSibling.textContent = field.validationMessage;
+         return field.checkValidity();
     }
 
 
@@ -254,5 +272,77 @@ $(document).ready(function(){
         e.preventDefault();
        $('.form__open').removeClass('form__open_activ');
        });
-  
+
+
+
+
+    //   видео
+
+    function videoPlay() {
+        $('#video__video').get(0).play();
+        $('#video__video-play').css('display','none');
+        $('#play__stop').css('display','block');
+    }
+    function videoPause () {
+        $('#video__video').get(0).pause();
+        $('#play__stop').css('display','none');
+    }
+
+    let flagVideo = 0;
+    function videoStop() {
+        
+       
+
+        if (flagVideo == 0) {
+            $('#video__video').get(0).pause();
+            $('#play__stop').css('display','none');
+            // $('#play__stop').css('display','block');
+            flagVideo = 1;
+        }  else {
+            $('#video__video').get(0).play();
+            $('#play__stop').css('display','block');
+            flagVideo = 0;
+        }
+        
+    }
+
+    let video = document.getElementById('video__video');
+    let line = document.getElementById('play__line-time');
+
+    let Flagvolume = 0;
+    function volume() {
+        if(Flagvolume == 0){
+            video.volume = 0;
+            Flagvolume = 1;
+        } else {
+            video.volume = 1;
+            Flagvolume = 0;
+        }
+        
+
+
+    }
+    
+    $('#video__video-play').on('click', videoPlay);
+    $('#play__play').on('click', videoStop);
+    $('#play__stop').on('click', videoPause);
+    $('#play__volum').on('click', volume);
+//   -------------
+
+
+
+    video.addEventListener('timeupdate', function() {
+            let porsent = Math.floor((100/ video.duration)* video.currentTime);
+            line.style.width = porsent + '%' ;
+
+    });
+
+    volumeControl = document.getElementById('volume'),
+    volumeControl.addEventListener('input', function () {
+         
+        video.volume = volumeControl.value;
+    }, false);
+
+
+   
 });

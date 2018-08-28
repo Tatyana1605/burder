@@ -35,7 +35,7 @@
   transform: translate(-50%, -50%);
   border-radius: 50%; }
 
-.aside__item.activ
+.aside__item.active
 .aside__btn:before {
   width: rem(16px);
   height: rem(16px); }
