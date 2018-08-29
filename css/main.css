@@ -1440,9 +1440,17 @@ li {
   cursor: pointer; }
 
 .play__stop {
-  margin-left: -1.1428571429rem;
   display: none;
-  cursor: pointer; }
+  cursor: pointer;
+  width: 1.1428571429rem;
+  height: 1.1428571429rem;
+  border-style: solid;
+  border-width: 0.7142857143rem;
+  border-color: #626262;
+  border-style: double;
+  border-width: 0rem 0.7142857143rem 0rem 0.7142857143rem;
+  border-width: 0rem 0rem 0rem 0.7142857143rem;
+  border-color: #626262; }
 
 .play__line {
   flex: 70%;

@@ -63,9 +63,19 @@
 }
 
 .play__stop {
-  margin-left: rem(-16px);
+  // margin-left: rem(-16px);
   display: none;
   cursor: pointer;
+
+  width: rem(16px);
+  height: rem(16px);
+  border-style: solid;
+  border-width: rem(10px);
+  border-color: #626262;
+  border-style: double;
+  border-width: rem(0px) rem(10px) rem(0px) rem(10px);
+  border-width:rem(0px) rem(0px) rem(0px) rem(10px);
+  border-color:#626262;
 }
 
 .play__line {
@@ -102,6 +112,8 @@
 // }
  .play__volline-line {
    margin: 0 rem(10px);
+
+   
   //  position: relative;
   //  height: 100%;
   //  background-color: #ffffff;
